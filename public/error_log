@@ -1,0 +1,726 @@
+[13-Oct-2020 13:46:56 UTC] PHP Warning:  require(/home2/txfluxco/public_html/../OTApp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:46:56 UTC] PHP Warning:  require(/home2/txfluxco/public_html/../OTApp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:46:56 UTC] PHP Fatal error:  require(): Failed opening required '/home2/txfluxco/public_html/../OTApp/vendor/autoload.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:47:27 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTApp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:47:27 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTApp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:47:27 UTC] PHP Fatal error:  require(): Failed opening required '/home2/txfluxco/public_html/OTApp/vendor/autoload.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home2/txfluxco/public_html/index.php on line 24
+[13-Oct-2020 13:59:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/txfluxco/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[16-Oct-2020 05:50:49 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTAphp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[16-Oct-2020 05:50:49 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTAphp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[16-Oct-2020 05:50:49 UTC] PHP Fatal error:  require(): Failed opening required '/home2/txfluxco/public_html/OTAphp/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home2/txfluxco/public_html/index.php on line 24
+[16-Oct-2020 05:50:51 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTAphp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[16-Oct-2020 05:50:51 UTC] PHP Warning:  require(/home2/txfluxco/public_html/OTAphp/vendor/autoload.php): failed to open stream: No such file or directory in /home2/txfluxco/public_html/index.php on line 24
+[16-Oct-2020 05:50:51 UTC] PHP Fatal error:  require(): Failed opening required '/home2/txfluxco/public_html/OTAphp/vendor/autoload.php' (include_path='.:/opt/alt/php71/usr/share/pear') in /home2/txfluxco/public_html/index.php on line 24
+[22-Oct-2020 05:23:59 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in /home2/txfluxco/public_html/OTApp/app/Http/Controllers/RaveController.php on line 23
+[22-Oct-2020 05:26:50 UTC] PHP Fatal error:  Cannot use Illuminate\Http\Request as Request because the name is already in use in /home2/txfluxco/public_html/OTApp/app/Http/Controllers/RaveController.php on line 24
+[16-Apr-2021 14:10:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:10:53 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:10:58 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:11:10 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:11:39 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:11:41 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:12:16 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:12:18 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Apr-2021 14:18:55 UTC] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/zenitho4/public_html/OTApp/vendor/laravel/framework/s in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[10-Sep-2021 06:00:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[10-Sep-2021 06:08:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[10-Sep-2021 07:00:06 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[10-Sep-2021 07:44:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[10-Sep-2021 08:00:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[16-Sep-2021 05:00:47 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[19-Sep-2021 05:01:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[19-Sep-2021 05:01:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[06-Oct-2021 05:00:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[12-Nov-2021 05:01:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[11-Dec-2021 05:00:37 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[13-Dec-2021 05:00:27 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[21-Dec-2021 05:00:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/zenitho4/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:56:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:56:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:56:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:56:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:57:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:57:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:59:42 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 07:59:53 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:00:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:01:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:02:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:14:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:14:44 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:20:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:20:47 UTC] PHP Warning:  require(/home2/ultracry/public_html/OTApp/vendor/autolod.php): failed to open stream: No such file or directory in /home2/ultracry/public_html/index.php on line 24
+[08-Jan-2022 08:20:47 UTC] PHP Fatal error:  require(): Failed opening required '/home2/ultracry/public_html/OTApp/vendor/autolod.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home2/ultracry/public_html/index.php on line 24
+[08-Jan-2022 08:20:48 UTC] PHP Warning:  require(/home2/ultracry/public_html/OTApp/vendor/autolod.php): failed to open stream: No such file or directory in /home2/ultracry/public_html/index.php on line 24
+[08-Jan-2022 08:20:48 UTC] PHP Fatal error:  require(): Failed opening required '/home2/ultracry/public_html/OTApp/vendor/autolod.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home2/ultracry/public_html/index.php on line 24
+[08-Jan-2022 08:23:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:24:27 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 08:25:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 09:37:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 09:58:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 09:59:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 10:58:58 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 11:43:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 12:18:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:06:44 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:06:44 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:06:46 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:06:47 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 14:07:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 15:03:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 15:03:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 15:03:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 15:03:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 16:17:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 16:17:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 16:20:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 16:21:01 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 21:01:45 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:21:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:21:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:21:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:21:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:31:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:56:37 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:56:37 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[08-Jan-2022 23:56:37 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 00:40:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 00:41:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:04:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:04:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:04:06 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:04:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:21:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:21:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:21:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 02:21:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 03:00:30 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 03:00:48 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 03:01:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 03:01:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 04:37:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 08:02:36 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 08:02:37 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 08:05:19 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[09-Jan-2022 08:05:19 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[19-Jan-2022 12:23:31 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
+[19-Jan-2022 12:23:36 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
+[19-Jan-2022 12:23:40 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php on line 67
+[25-Jan-2022 05:01:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:46:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:46:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:47:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:47:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:47:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:47:30 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:55:00 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:35 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:56:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:57:01 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:57:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:57:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:57:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:57:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:58:00 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:58:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:59:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:59:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:59:42 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:59:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 05:59:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:00:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:00:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:01:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:03:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:03:07 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:07:58 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:00 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:06 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:10 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:13 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:08:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:09:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:09:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:09:25 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:09:33 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:09:36 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:12:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:14:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:14:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:14:44 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:15:53 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:16:13 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:16:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:16:21 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:18:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:18:42 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:18:45 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:18:46 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:18:58 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:19:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:19:21 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:19:45 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:27:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:27:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:27:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:27:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:27:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:28:01 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:28:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:28:06 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:28:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:25 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:30 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:34 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:41 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:43 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:46 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:48 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:50 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:52 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:54 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:29:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:30:02 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:30:33 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:30:48 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:30:53 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:30:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:31:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:31:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:32:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:32:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:32:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:32:17 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:32:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:35 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:43 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:46 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:47 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:49 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 06:37:51 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:00:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:09 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:16 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:19 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:07:29 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:11:22 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:11:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:12:11 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:16:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:25:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:25:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:30:05 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:30:32 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:50:57 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:51:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:52:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:52:35 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:52:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:54:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:54:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:54:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:57:34 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:57:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 07:58:14 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:00:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:00:24 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:01:40 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:01:43 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:02:50 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:03:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:14:59 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:15:01 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:15:12 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 08:16:33 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 09:02:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:03:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:04:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:05:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:05:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:07:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:08:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\VarDumper\Dumper\json_encode() in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php:131
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php(842): Symfony\Component\VarDumper\Dumper\HtmlDumper->getDumpHeader()
+#1 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(502): Symfony\Component\VarDumper\Dumper\HtmlDumper->dumpLine(0, true)
+#2 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/CliDumper.php(241): Symfony\Component\VarDumper\Dumper\CliDumper->endValue(Object(Symfony\Component\VarDumper\Cloner\Cursor))
+#3 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(372): Symfony\Component\VarDumper\Dumper\CliDumper->dumpString(Object(Symfony\Component\VarDumper\Cloner\Cursor), 'Call to undefin...', false, 0)
+#4 /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Cloner/Data.php(278): Symfony\Compone in /home2/ultracry/public_html/OTApp/vendor/symfony/var-dumper/Dumper/HtmlDumper.php on line 131
+[26-Jan-2022 09:14:55 UTC] PHP Parse error:  syntax error, unexpected '?' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[26-Jan-2022 09:15:45 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:15:49 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:15:54 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:17:43 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:17:43 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:24 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:27 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:28 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:35 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:37 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:18:41 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:21:29 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:24:27 UTC] PHP Fatal error:  Uncaught ErrorException: Method ReflectionParameter::getClass() is deprecated in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(811): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(780): Illuminate\Container\Container->resolveDependencies()
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#4 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#5 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(256): Illuminate\Foundation\Application->make()
+#6 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#7 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build()
+#8 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve()
+#9 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make()
+#10 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(159): Illuminate\Foundation\Application->make()
+#11 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(112): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#12 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(89): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#14 {main}
+  thrown in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[26-Jan-2022 09:38:42 UTC] PHP Fatal error:  Uncaught ErrorException: Use of undefined constant JSON_HEX_TAG - assumed 'JSON_HEX_TAG' in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php:140
+Stack trace:
+#0 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(140): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Use of undefine...', '/home2/ultracry...', 140, Array)
+#1 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(749): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build(Object(Closure))
+#3 /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('blade.compiler', Array)
+#4 /home2/ultracry/public in /home2/ultracry/public_html/OTApp/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php on line 140

@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/bootstrap.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/animate.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/owl.carousel.min.css')); ?>" type="text/css"/>
-    <link rel="stylesheet" href="<?php echo e(asset ('home/css/responsive.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/style.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/responsive.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
      <!-- Stylesheets End -->
@@ -777,7 +777,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             </div>
 			
 			
-			<div class="team-section p-tb light-gray-bg mercury-layout" id="team">
+			<div class="team-section p-tb light-gray-bg mercury-layout" id="cert">
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Certification</h2></div>
                     <div class="row">
@@ -1440,11 +1440,11 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <script src="<?php echo e(asset('home/js/jquery.countdown.js')); ?>"></script>
     <script src="<?php echo e(asset('home/js/owl.carousel.js')); ?>"></script>
 
-    <script src="<?php echo e(asset ('home/js/Chart.js')); ?> "></script>
-    <script src="<?php echo e(asset ('home/js/chart-function.js')); ?> "></script>
+    <!-- <script src="<?php echo e(asset ('home/js/Chart.js')); ?> "></script> -->
+    <!-- <script src="<?php echo e(asset ('home/js/chart-function.js')); ?> "></script> -->
     <script src="<?php echo e(asset ('home/js/script.js')); ?> "></script>
-    <script src="<?php echo e(asset ('home/js/particles.js')); ?> "></script>
-    <script src="<?php echo e(asset ('home/js/gold-app.js')); ?> "></script>
+    <!-- <script src="<?php echo e(asset ('home/js/particles.js')); ?> "></script> -->
+    <!-- <script src="<?php echo e(asset ('home/js/gold-app.js')); ?> "></script> -->
 
      <script type="text/javascript">
         function isScrolledIntoView(elem) {

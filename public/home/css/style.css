@@ -167,14 +167,14 @@ textarea.form-control{
 	content: "";
 	display: block;
 	margin: 30px 0;
-	background: url(images/line1.png) no-repeat 0 0;
+	background: url(../images/line1.png) no-repeat 0 0;
 }
 .sec-title.text-center:after {
 	min-height: 6px;
 	content: "";
 	display: block;
 	margin: 30px 0;
-	background: url(images/line2.png) no-repeat 0 0;
+	background: url(../images/line2.png) no-repeat 0 0;
 }
 .sec-title.text-center:after {
 	background-position: center;
@@ -453,7 +453,7 @@ header.fixed {
 	margin-left: 30px;
 }
 .hero-left .hero-btns .btn2:before {
-	background: url(images/arrow1.png);
+	background: url(../images/arrow1.png);
 	width: 16px;
 	height: 21px;
 	display: inline-block;
@@ -884,7 +884,7 @@ header.fixed {
 	margin: auto;
 	height:115px;
 	width:199px;  
-	background:url(images/diamond-base.png) no-repeat scroll 0px 0px;
+	background:url(../images/diamond-base.png) no-repeat scroll 0px 0px;
 	transform: translateX(-50%);
 }
 .diamond-animation .main{
@@ -896,7 +896,7 @@ header.fixed {
 	margin: auto;
 	height:481px;
 	width: 685px; 
-	background:url(images/diamond-main.png) no-repeat scroll 0px 0px;
+	background:url(../images/diamond-main.png) no-repeat scroll 0px 0px;
 	background-size: cover;
 	background-position: center;
 	animation: MainHight 2s linear;
@@ -909,7 +909,7 @@ header.fixed {
 .diamond-animation .main:before{
 	height:271px;
 	width:450px; 
-	background:url(images/diamond-top.png) no-repeat scroll 0px 0px;
+	background:url(../images/diamond-top.png) no-repeat scroll 0px 0px;
 	background-size: cover;
 	background-position: center;
 	position:absolute;
@@ -932,7 +932,7 @@ header.fixed {
   100% {transform:scale(1,1); top:48px;}
 }
 .diamond-animation .base::before, .diamond-animation .base::after{
-	background:url(images/diamond-base-1.png) no-repeat scroll 0px 0px;
+	background:url(../images/diamond-base-1.png) no-repeat scroll 0px 0px;
 	content: '';
 	display: block;
 	position: absolute;
@@ -955,7 +955,7 @@ header.fixed {
   100% { transform: scale(2.4); opacity:0; }
 }
 .inside-bitcoin{
-	background:url(images/bitcoin-inside.png) no-repeat scroll 0px 0px;
+	background:url(../images/bitcoin-inside.png) no-repeat scroll 0px 0px;
 	background-size: cover;
 	background-position: center;
 	width:133px;
@@ -994,7 +994,7 @@ header.fixed {
 .diamond-animation .lines span{
 	width:2px;
 	height:138px;
-	background:url(images/diamond-top-lines.png) no-repeat scroll 0px 0px;
+	background:url(../images/diamond-top-lines.png) no-repeat scroll 0px 0px;
 	position:absolute;
 	transition:all 2s ease; 
 	transform:scaleY(0);
@@ -1111,7 +1111,7 @@ header.fixed {
 .top-coin{
 	width:356px;
 	height:239px; 
-	background:url(images/diamond-top-coin.png) no-repeat scroll center center;
+	background:url(../images/diamond-top-coin.png) no-repeat scroll center center;
 	background-size:cover;
 	left: 0;
 	right: 0;
@@ -1134,7 +1134,7 @@ header.fixed {
 .diamond-grid{
 	width:68px;
 	height:111px;
-	background:url(images/diamond-grid-1.png) no-repeat scroll center center / cover;
+	background:url(../images/diamond-grid-1.png) no-repeat scroll center center / cover;
 	-webkit-animation: bottomTotop 15s linear 0s infinite;
 	animation: bottomTotop 15s linear 0s infinite;
 	position:absolute;
@@ -1144,7 +1144,7 @@ header.fixed {
 .diamond-grid-2{
 	width:40px;
 	height:65px;
-	background:url(images/diamond-grid-1.png) no-repeat scroll center center / cover;
+	background:url(../images/diamond-grid-1.png) no-repeat scroll center center / cover;
 	-webkit-animation: bottomTotop 16s linear 0s infinite;
 	animation: bottomTotop 16s linear 0s infinite;
 	position:absolute;
@@ -1166,7 +1166,7 @@ header.fixed {
   }
 }
 .outer-Orbit{
-	background:url(images/diamond-top-ring.png) no-repeat scroll center center / cover;
+	background:url(../images/diamond-top-ring.png) no-repeat scroll center center / cover;
 	width:0px;
 	height:0px;
 	top:0px;
@@ -1214,7 +1214,7 @@ header.fixed {
     position: absolute;
     left: 0px;
     top: 0px;
-    background:url(images/OrbitSquare.png) no-repeat scroll 0px 0px / cover;
+    background:url(../images/OrbitSquare.png) no-repeat scroll 0px 0px / cover;
     display: block;
     -webkit-transform: scaleX(0.50);
     font-size:0; 
@@ -1231,7 +1231,7 @@ header.fixed {
 .gris2{
 	width:25px;
 	height:82px;
-	background:url(images/diamond-grid-2.png) no-repeat scroll center center / cover;
+	background:url(../images/diamond-grid-2.png) no-repeat scroll center center / cover;
 	position:absolute;
 	left: 58%;
 	z-index: 0;
@@ -1244,7 +1244,7 @@ header.fixed {
 .square-1{
 	width:25px;
 	height:26px;
-	background:url(images/OrbitSquare.png) no-repeat scroll center center / cover;
+	background:url(../images/OrbitSquare.png) no-repeat scroll center center / cover;
 	position:absolute;
 	left:63%;
 	z-index: 0;
@@ -1257,7 +1257,7 @@ header.fixed {
 
 }
 .page-header{
-	background:url(images/page-header-bg.jpg) no-repeat scroll center / cover;
+	background:url(../images/page-header-bg.jpg) no-repeat scroll center / cover;
 	position: relative;
 }
 .page-header-overlay{
@@ -1294,11 +1294,11 @@ header.fixed {
     height:0px;
     opacity:0;
     width:390px;
-    background: url(images/platinum-base.png) no-repeat scroll 0px 0px;
+    background: url(../images/platinum-base.png) no-repeat scroll 0px 0px;
     transform: translateX(-50%);
 }
 .platinum-animation .base:before{
-	background: url(images/platinum-base-line.png) no-repeat scroll 0px 0px;
+	background: url(../images/platinum-base-line.png) no-repeat scroll 0px 0px;
 	content: "";
 	position: absolute;
 	bottom: -77px;
@@ -1323,7 +1323,7 @@ header.fixed {
     margin: auto;
     height:0px;
     width:0px;
-    background: url(images/platinum-waves.png) no-repeat scroll 0px 0px;
+    background: url(../images/platinum-waves.png) no-repeat scroll 0px 0px;
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -1359,7 +1359,7 @@ header.fixed {
     margin: auto;
     height:420px;
     width:420px;
-    background: url(images/coin-bg-icon.png) no-repeat scroll 0px 0px;
+    background: url(../images/coin-bg-icon.png) no-repeat scroll 0px 0px;
     background-size: cover;
     background-position: center;
     z-index:3;
@@ -1387,7 +1387,7 @@ header.fixed {
 .platinum-animation .coin-icon{
 	height:140px;
     width:140px;
-    background: url(images/gold-animation-icon.png) no-repeat scroll 0px 0px;
+    background: url(../images/gold-animation-icon.png) no-repeat scroll 0px 0px;
 	opacity:0;
     visibility:hidden;
     -webkit-transform: translate(-50%, -50%) scale(0);
@@ -1418,7 +1418,7 @@ header.fixed {
 .platinum-animation .lines span {
     width: 4px;
     height: 258px;
-    background: url(images/platinum-top-lines.png) no-repeat scroll 0px 0px;
+    background: url(../images/platinum-top-lines.png) no-repeat scroll 0px 0px;
     position: absolute;
     transition: all 2s ease;
     transform: scaleY(0);
@@ -1465,7 +1465,7 @@ header.fixed {
 .platinum-move-1 {
     width:13px;
     height: 119px;
-    background: url(images/platinum-move-1.png) no-repeat scroll center center / cover;
+    background: url(../images/platinum-move-1.png) no-repeat scroll center center / cover;
     -webkit-animation: bottomTotop 15s linear 0s infinite;
     animation: bottomTotop 15s linear 0s infinite;
     position: absolute;
@@ -1475,7 +1475,7 @@ header.fixed {
 .platinum-move-2 {
     width:13px;
     height: 119px;
-    background: url(images/platinum-move-1.png) no-repeat scroll center center / cover;
+    background: url(../images/platinum-move-1.png) no-repeat scroll center center / cover;
     -webkit-animation: bottomTotop 18s linear 0s infinite;
     animation: bottomTotop 18s linear 0s infinite;
     position: absolute;
@@ -1485,7 +1485,7 @@ header.fixed {
 .platinum-move-3 {
     width:13px;
     height: 119px;
-    background: url(images/platinum-move-1.png) no-repeat scroll center center / cover;
+    background: url(../images/platinum-move-1.png) no-repeat scroll center center / cover;
     -webkit-animation: bottomTotop 18s linear 0s infinite;
     animation: bottomTotop 18s linear 0s infinite;
     position: absolute;
@@ -1496,7 +1496,7 @@ header.fixed {
 .platinum-move-4 {
     width:52px;
     height: 220px;
-    background: url(images/platinum-move-2.png) no-repeat scroll center center / cover;
+    background: url(../images/platinum-move-2.png) no-repeat scroll center center / cover;
     position: absolute;
     right: 15px;
 	bottom: 160px;
@@ -1507,7 +1507,7 @@ header.fixed {
 .platinum-move-5 {
     width:40px;
 	height:138px;
-    background: url(images/platinum-move-3.png) no-repeat scroll center center / cover;
+    background: url(../images/platinum-move-3.png) no-repeat scroll center center / cover;
     position: absolute;
     left:25px;
     bottom:200px; 
@@ -1538,7 +1538,7 @@ header.fixed {
    display:none; 
 }
 .mercury-animation .number-one{
-	background: url('images/mercury-numbers-1.png') no-repeat scroll 0 0;
+	background: url('../images/mercury-numbers-1.png') no-repeat scroll 0 0;
 	height:307px;
 	width:139px;
 	position:absolute;
@@ -1547,7 +1547,7 @@ header.fixed {
 	animation: top-bottom 10s linear 0s infinite;
 }
 .mercury-animation .number-two{
-	background: url('images/mercury-numbers-1.png') no-repeat scroll 0 0;
+	background: url('../images/mercury-numbers-1.png') no-repeat scroll 0 0;
 	height:307px;
 	width:139px;
 	position:absolute;
@@ -1590,7 +1590,7 @@ header.fixed {
 	animation: rotate 8s linear infinite; /* This is going to be defined in the next step */
 	color: #000;
 	border-radius: 50%;
-	background:url(images/mercury-earth-map.png) 0 0 repeat;
+	background:url(../images/mercury-earth-map.png) 0 0 repeat;
 	background-size: 730px;
 	box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
 	transform-style: preserve-3d;
@@ -1599,7 +1599,7 @@ header.fixed {
 #earth-box{
 	width: 400px;
 	height: 400px;
-  	background:url(images/mercury-earth.png) 0 0 repeat;
+  	background:url(../images/mercury-earth.png) 0 0 repeat;
   	background-size:100%; 
   	border-radius: 50%;
   	margin:auto;
@@ -1619,7 +1619,7 @@ header.fixed {
     position: absolute;
 }
 #earth-box-cover .earth-icons .icon-1{
-	background:url('images/earth-icon-1.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-1.png') no-repeat scroll 0px 0px / cover;
 	width: 28px;
 	height: 47px;
 	position: absolute;
@@ -1629,7 +1629,7 @@ header.fixed {
 	animation: zoomfade 2s linear infinite;
 }
 #earth-box-cover .earth-icons .icon-2{
-	background:url('images/earth-icon-2.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-2.png') no-repeat scroll 0px 0px / cover;
 	width: 21px;
 	height: 52px;
 	position: absolute;
@@ -1639,7 +1639,7 @@ header.fixed {
 	animation: zoomfade 1.5s linear infinite;
 }
 #earth-box-cover .earth-icons .icon-3{
-	background:url('images/earth-icon-3.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-3.png') no-repeat scroll 0px 0px / cover;
 	width:34px;
 	height:35px;
 	position: absolute;
@@ -1649,7 +1649,7 @@ header.fixed {
 	animation: zoomfade 900ms linear infinite;
 }
 #earth-box-cover .earth-icons .icon-4{
-	background:url('images/earth-icon-4.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-4.png') no-repeat scroll 0px 0px / cover;
 	width:25px;
 	height:33px;
 	position: absolute;
@@ -1659,7 +1659,7 @@ header.fixed {
 	animation: zoomfade 1.3s linear infinite;
 }
 #earth-box-cover .earth-icons .icon-5{
-	background:url('images/earth-icon-5.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-5.png') no-repeat scroll 0px 0px / cover;
 	width:26px;
 	height:33px;
 	position: absolute;
@@ -1669,7 +1669,7 @@ header.fixed {
 	animation: zoomfade 1.7s linear infinite;
 }
 #earth-box-cover .earth-icons .icon-6{
-	background:url('images/earth-icon-6.png') no-repeat scroll 0px 0px / cover;
+	background:url('../images/earth-icon-6.png') no-repeat scroll 0px 0px / cover;
 	width:16px;
 	height:24px;
 	position: absolute;
@@ -1679,7 +1679,7 @@ header.fixed {
 	animation: zoomfade 950ms linear infinite;
 }
 #earth-box-cover .earth-icons .icon-7{
-	background:url('images/gold-animation-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/gold-animation-icon.png') no-repeat scroll 0px 0px;
 	width:60px;
 	height:60px;
 	position: absolute;
@@ -1702,7 +1702,7 @@ header.fixed {
 #earth-box-cover:before{
 	width:589px;
 	height:589px;
-  	background:url(images/mercury-earth-cover.png) 0 0 repeat;
+  	background:url(../images/mercury-earth-cover.png) 0 0 repeat;
   	background-size:100%; 
   	border-radius: 50%;
   	content:"";
@@ -1947,7 +1947,7 @@ h2.section-heading span{
 	padding-left:55px; 
 }
 .diamond-icon:before{
-	background: url('images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
+	background: url('../images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
     content: "";
     height: 370px;
     width: 370px;
@@ -1985,7 +1985,7 @@ h2.section-heading span{
 	transition: all 1000ms;
 }
 .coin-animation .coin-1{
-	background:url('images/coin-1.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-1.png') no-repeat scroll 0px 0px;
 	height:47px;
 	width:66px;
 	background-size:auto;
@@ -1996,7 +1996,7 @@ h2.section-heading span{
 	opacity:0; 
 }
 .coin-animation .coin-2{
-	background:url('images/coin-2.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-2.png') no-repeat scroll 0px 0px;
 	height:56px;
 	width:64px;
 	background-size:auto;
@@ -2007,7 +2007,7 @@ h2.section-heading span{
 	opacity:0;
 }
 .coin-animation .coin-3{
-	background:url('images/coin-3.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-3.png') no-repeat scroll 0px 0px;
 	height:56px;
 	width:64px;
 	background-size:auto;
@@ -2018,7 +2018,7 @@ h2.section-heading span{
 	opacity:0;
 }
 .coin-animation .coin-4{
-	background:url('images/coin-4.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-4.png') no-repeat scroll 0px 0px;
 	height:56px;
 	width:80px;
 	background-size:auto;
@@ -2029,7 +2029,7 @@ h2.section-heading span{
 	opacity:0;
 }
 .coin-animation .coin-5{
-	background:url('images/coin-5.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-5.png') no-repeat scroll 0px 0px;
 	height:56px;
 	width:64px;
 	background-size:auto;
@@ -2040,7 +2040,7 @@ h2.section-heading span{
 	opacity:0;
 }
 .coin-animation .coin-6{
-	background:url('images/coin-6.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-6.png') no-repeat scroll 0px 0px;
 	height:64px;
 	width:56px;
 	background-size:auto;
@@ -2051,7 +2051,7 @@ h2.section-heading span{
 	opacity:0;
 }
 .coin-animation .coin-7{
-	background:url('images/coin-7.png') no-repeat scroll 0px 0px;
+	background:url('../images/coin-7.png') no-repeat scroll 0px 0px;
 	height:65px;
 	width:56px;
 	background-size:auto;
@@ -2121,7 +2121,7 @@ h2.section-heading span{
 }
 .our-mission-boxes {
 	margin: 0;
-	background: url(images/our-mission.jpg);
+	background: url(../images/our-mission.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -2175,7 +2175,7 @@ h2.section-heading span{
 	visibility: visible;
 }
 .our-mission.c-l{
-	background:url('images/our-mission-2.jpg');
+	background:url('../images/our-mission-2.jpg');
 	background-size:cover;
 	background-position:center center;
 }
@@ -2186,7 +2186,7 @@ h2.section-heading span{
 07. BENEFIT SECTION
 *===================================*/
 .benefits{
-	background-image:url(images/tr-circle-bg.png); 
+	background-image:url(../images/tr-circle-bg.png); 
 	background-repeat:no-repeat;
 	background-color:#000000;
 	background-position:left center;
@@ -2835,7 +2835,7 @@ h2.section-heading span{
 	font-weight:bold;  
 }
 .diamond-layout.token-sale{
-	background-image:url(images/bg-2.jpg); 
+	background-image:url(../images/bg-2.jpg); 
 	background-position:center bottom;
 	background-size:100% auto;
 	background-repeat:no-repeat;  
@@ -3174,7 +3174,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	width: 100%;
 	clear: both;
 	border-top: 5px solid #fbbd18;
-	background-image:url(images/map-bg.png); 
+	background-image:url(../images/map-bg.png); 
 	background-repeat:no-repeat;
 	background-color:#000000;
 	background-position:center;
@@ -3216,7 +3216,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	padding: 0 20px;
 }
 .roadmap-slider:before {
-	background: url(images/slider-line.png) no-repeat center;
+	background: url(../images/slider-line.png) no-repeat center;
 	position: absolute;
 	width: 100%;
 	background-size: 100% 3px;
@@ -3732,7 +3732,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
     transform: translate(-50%, -50%);
 }
 .mercury-roadmap .roadmap-item .roadmap-text:before{
-	background:url("images/question-img.png") no-repeat scroll 0 0;
+	background:url("../images/question-img.png") no-repeat scroll 0 0;
 	content: "";
 	position: absolute;
 	top: 0;
@@ -3743,7 +3743,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	margin: auto;
 }
 .mercury-roadmap .roadmap-item.even .roadmap-text::before {
-	background:url("images/question-img-rev.png") no-repeat scroll 0 0;
+	background:url("../images/question-img-rev.png") no-repeat scroll 0 0;
 	top:auto;
 	bottom:0; 
 }
@@ -3880,7 +3880,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	position:relative;
 }
 .team-section.style-2:before{
-	background:url(images/team-bg.jpg) no-repeat right top;
+	background:url(../images/team-bg.jpg) no-repeat right top;
 	height:100%;
 	content:"";
 	position:absolute;
@@ -4102,7 +4102,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	bottom:0;      
 }
 .diamond-layout.team-section:after{
-	background:url('images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
+	background:url('../images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
 	content: "";
 	height: 370px;
 	width: 370px;
@@ -4119,7 +4119,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	position:relative; 
 }
 .team-minimal-section:after{
-	background:url('images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
+	background:url('../images/coinpool-dots-circle.png') no-repeat scroll 0px 0px;
 	content: "";
 	height: 370px;
 	width: 370px;
@@ -4632,7 +4632,7 @@ ul.allocation-list li:nth-child(7):before{background:#303030;}
 	content:"\f078";
 }
 .call-to-action-section{
-	background: url("images/bg-1.jpg") no-repeat scroll center;
+	background: url("../images/bg-1.jpg") no-repeat scroll center;
 	background-size: cover;
 	color:#000000; 
 }
@@ -4747,7 +4747,7 @@ footer {
 	color: rgba(242, 242, 242, 0.6)
 }
 footer.footer-2{
-	background:url("images/footer-2-bg.jpg") no-repeat scroll 0px 0px; 
+	background:url("../images/footer-2-bg.jpg") no-repeat scroll 0px 0px; 
 	text-align: center;
 	background-size:cover; 
 }
@@ -5413,7 +5413,7 @@ ul.horizontal-menu li a{
     content: "";
     display: block;
     margin: 15px 0;
-    background: url(images/line1.png) no-repeat 0 0;
+    background: url(../images/line1.png) no-repeat 0 0;
 }
 .sidebar .widget{
 	margin-bottom:50px;
@@ -5534,7 +5534,7 @@ ul.horizontal-menu li a{
 15. Milestone 
 *===================================*/
 .milestone-section{
-	background:url("images/bg-1.jpg") no-repeat scroll center;
+	background:url("../images/bg-1.jpg") no-repeat scroll center;
 	background-size:cover;  
 }
 .counter{
@@ -5739,7 +5739,7 @@ ul.horizontal-menu li a{
 	position:relative; 
 }
 .token-pricing-section:before{
-	background:url('images/video-bg-1.jpg') no-repeat scroll center center;
+	background:url('../images/video-bg-1.jpg') no-repeat scroll center center;
 	content:"";
 	height:350px;
 	width:100%;
@@ -5759,7 +5759,7 @@ ul.horizontal-menu li a{
 	margin:0;
 }
 /*.token-pricing-section .section-heading:before{
-	background:url('images/live-price-wave.png') no-repeat scroll center right;
+	background:url('../images/live-price-wave.png') no-repeat scroll center right;
 	content:"";
 	height:30px;
 	width:100%;
@@ -5904,27 +5904,27 @@ ul.horizontal-menu li a{
     content:"";
 }
 .your-name .form-field:before{
-	background:url('images/user-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/user-icon.png') no-repeat scroll 0px 0px;
 	background-size: 100%;
 }
 .email-address .form-field:before{
-	background:url('images/email-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/email-icon.png') no-repeat scroll 0px 0px;
 	background-size: 100%;
 	width:22px;
 	top:15px;  
 }
 .phone-number .form-field:before{
-	background:url('images/phone-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/phone-icon.png') no-repeat scroll 0px 0px;
 	background-size: 100%;
 	width: 22px;
 	top: 17px;
 }
 .company-name .form-field:before{
-	background:url('images/company-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/company-icon.png') no-repeat scroll 0px 0px;
 	background-size: 100%;
 }
 .message .form-field:before{
-	background:url('images/message-icon.png') no-repeat scroll 0px 0px;
+	background:url('../images/message-icon.png') no-repeat scroll 0px 0px;
 	background-size: 100%;
 	top: 22px;
 }
@@ -5980,11 +5980,11 @@ h4.widget-title{
 .exchange-list-section .heading{
 	color:#000000;
 	margin-right:30px;
-	background:url('images/exchange-list-icon-2.png') no-repeat scroll center right;
+	background:url('../images/exchange-list-icon-2.png') no-repeat scroll center right;
 	position:relative; 
 }
 .exchange-list-section .heading:before{
-	background:url('images/exchange-list-icon.png') no-repeat scroll 0px 0px;	
+	background:url('../images/exchange-list-icon.png') no-repeat scroll 0px 0px;	
 	height:26px;
 	width:60px;
 	content:"";
@@ -6093,7 +6093,7 @@ h4.widget-title{
 	display:table;
 }
 .video-section .play-button a{
-	background:#fbbd18 url("images/play-btn.png") no-repeat scroll 0px 0px;
+	background:#fbbd18 url("../images/play-btn.png") no-repeat scroll 0px 0px;
 	height:150px;
 	width:150px;
 	display: block;
@@ -6107,7 +6107,7 @@ h4.widget-title{
 	background-position: center;
 }
 .video-section.pause-video .play-button a{
-	background-image:url("images/pause-btn.png");
+	background-image:url("../images/pause-btn.png");
 }
 .video-section .play-button a:hover{
 	-webkit-transform:scale(1);
@@ -6121,7 +6121,7 @@ h4.widget-title{
 19. Currency calculator
 *===================================*/
 .currency-calculator{
-	background:url('images/bg-3.jpg') no-repeat scroll left center;
+	background:url('../images/bg-3.jpg') no-repeat scroll left center;
 	background-size:cover; 
 }
 .currency-form{
@@ -6149,7 +6149,7 @@ h4.widget-title{
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	line-height: 1 !important;
-	background:url('images/down-arrow.png') no-repeat scroll right 15px center !important;  
+	background:url('../images/down-arrow.png') no-repeat scroll right 15px center !important;  
 }
 /*===================================*
 20. Currency calculator
@@ -6158,7 +6158,7 @@ h4.widget-title{
 	position:relative;
 }
 .featured-product-sec:before{
-	background:url('images/bg-5.png') no-repeat scroll 0 0;
+	background:url('../images/bg-5.png') no-repeat scroll 0 0;
 	position:absolute;
 	top:0;
 	left:0;
@@ -6167,7 +6167,7 @@ h4.widget-title{
 	width:35%;  
 }
 .featured-product-sec:after{
-	background:url('images/bg-4.png') no-repeat scroll bottom right;
+	background:url('../images/bg-4.png') no-repeat scroll bottom right;
 	position:absolute;
 	top:0;
 	right:0;

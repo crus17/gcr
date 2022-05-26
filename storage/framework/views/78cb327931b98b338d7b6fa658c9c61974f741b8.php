@@ -1432,7 +1432,6 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
  
  
  
-    <!-- <script src="//code.tidio.co/ci6qia0f7wnluimwdg2nc3ygf0vqeust.js" async></script> -->
     <script src="<?php echo e(asset('home/js/jquery.min.js')); ?>"></script>
     <script src="<?php echo e(asset('home/js/bootstrap.min.js')); ?>"></script>
     <script src="<?php echo e(asset('home/js/onpagescroll.js')); ?>"></script>
@@ -1440,11 +1439,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <script src="<?php echo e(asset('home/js/jquery.countdown.js')); ?>"></script>
     <script src="<?php echo e(asset('home/js/owl.carousel.js')); ?>"></script>
 
-    <!-- <script src="<?php echo e(asset ('home/js/Chart.js')); ?> "></script> -->
-    <!-- <script src="<?php echo e(asset ('home/js/chart-function.js')); ?> "></script> -->
     <script src="<?php echo e(asset ('home/js/script.js')); ?> "></script>
-    <!-- <script src="<?php echo e(asset ('home/js/particles.js')); ?> "></script> -->
-    <!-- <script src="<?php echo e(asset ('home/js/gold-app.js')); ?> "></script> -->
 
      <script type="text/javascript">
         function isScrolledIntoView(elem) {

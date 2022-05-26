@@ -62,7 +62,7 @@
 		   <div class="container">
 				<div class="row"> 
                     <div class="col-sm-6 col-md-4 logo">
-                        <a href="index" title="{{$settings->site_name}}">
+                        <a href="#" title="{{$settings->site_name}}">
                             <img class="light" src="{{ asset('/home/images/logo-light.png')}}"  width="160" alt="{{$settings->site_name}}">
                             <img class="dark" src="{{ asset('/home/images/logo-dark.png')}}"  width="160" alt="{{$settings->site_name}}">
                         </a>
@@ -151,10 +151,10 @@
                         </div>
                     </div>
                         <div style="margin-top:100px;" class="col-lg-6 col-md-12">
-                            <h2 class="section-heading">About First Crypto Trading</h2>
-                            <h4>Why to choose First Crypto Trading?</h4>
+                            <h2 class="section-heading">About {{$settings->site_name}}</h2>
+                            <h4>Why to choose {{$settings->site_name}}?</h4>
                             <h5>
-First Crypto Tradingprovides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.
+{{$settings->site_name}} provides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.
 </h5>
                             <p>
 We welcome you to the digital world of crypto investment and online trading where our clients will receive stable and risk-free long-term returns by placing their Bitcoin asset in our online profound asset management program. </p>
@@ -1116,8 +1116,8 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         </div>
                         <div class="col-lg-7">
                             <h2 class="section-heading">Don’t Miss Our App! It’s Free to Download for You,</h2>
-                            <p>First Crypto Tradingis a top tier bitcoin invest­ment platform available every one. First Crypto Tradingis a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
-                            <p>First Crypto Tradingis run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
+                            <p>{{$settings->site_name}}is a top tier bitcoin invest­ment platform available every one. {{$settings->site_name}}is a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
+                            <p>{{$settings->site_name}}is run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
                             <div class="button-wrapper">
                                 <a href="#" class="apple-btn">
                                     <img src="{{ asset ('home/images/app-store-btn.png')}}" alt="">
@@ -1279,7 +1279,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                     <!-- Card body -->
                                     <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx">
                                         <div class="card-body">
-                                           The default Crypto currency need for investment in First Crypto Tradingis the bitcoin currency.
+                                           The default Crypto currency need for investment in {{$settings->site_name}}is the bitcoin currency.
                                         </div>
                                     </div>
                                 </div>

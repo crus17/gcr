@@ -22,6 +22,12 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
     <!-- Website Title -->
     <title>{{$settings->site_name}} | {{$settings->site_title}}</title>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        {{!! $settings->tawk_to !!}}
+    </script>
+
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/bootstrap.css')}}" type="text/css"/>

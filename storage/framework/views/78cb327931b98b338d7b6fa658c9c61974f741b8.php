@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
     <!-- Website Title -->
     <title><?php echo e($settings->site_name); ?> | <?php echo e($settings->site_title); ?></title>
+
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/fontawesome.min.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/bootstrap.css')); ?>" type="text/css"/>
@@ -1500,6 +1501,11 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
         </script>
     </div>
 
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        {<?php echo $settings->tawk_to; ?>}
+    </script>
 </body>
 
 </html>

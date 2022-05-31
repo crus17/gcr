@@ -23,6 +23,11 @@
     <!-- Website Title -->
     <title><?php echo e($settings->site_name); ?> | <?php echo e($settings->site_title); ?></title>
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        {<?php echo $settings->tawk_to; ?>}
+    </script>
+
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/fontawesome.min.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/bootstrap.css')); ?>" type="text/css"/>
@@ -1501,11 +1506,6 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
         </script>
     </div>
 
-    
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        {<?php echo $settings->tawk_to; ?>}
-    </script>
 </body>
 
 </html>

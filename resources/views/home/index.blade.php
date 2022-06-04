@@ -24,7 +24,12 @@
     <title>{{$settings->site_name}} | {{$settings->site_title}}</title>
 
     <!--Start of Tawk.to Script-->
-    {{!! $settings->tawk_to !!}}
+    <script type="text/javascript">
+        {{!! $settings->tawk_to !!}}
+    </script>
+    <!--Tidio Script-->
+    <script src="//code.tidio.co/xlyfmwcfo55umfpbfzdbf6d7jvuggeit.js" async></script>
+
 
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>

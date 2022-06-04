@@ -45,8 +45,6 @@
         <script src="{{ asset('home/js/main.js')}}"></script>
         
         <!--Start of Tawk.to Script-->
-        <script type="text/javascript">
-            {{!! $settings->tawk_to !!}}
-        </script>
+        {{!! $settings->tawk_to !!}}
 
 </head>

@@ -24,9 +24,7 @@
     <title>{{$settings->site_name}} | {{$settings->site_title}}</title>
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        {{!! $settings->tawk_to !!}}
-    </script>
+    {{!! $settings->tawk_to !!}}
 
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>

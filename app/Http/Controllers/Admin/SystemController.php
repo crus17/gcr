@@ -83,5 +83,23 @@ class SystemController extends Controller
     ->with('message', "User trade mode has been turned $action.");
 }
 
+//Turn on/off user withdrawal
+public function userwithdrawalmode(Request $request, $id, $action){
+  if($action=="on"){
+      $action = "on";
+  }elseif($action == "off"){
+      $action = "off";
+  }else{
+      return redirect()-back()->with('message',"Unknown action!");
+  }
+  
+  users::where('id', $id)
+  ->update([
+  'allow_withdrawal' => $action,
+  ]);
+  return redirect()->back()
+  ->with('message', "User withdrawal mode has been turned $action.");
+}
+
 
 }

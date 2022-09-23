@@ -108,7 +108,12 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													@if($list->trade_mode=='on')
 													<a class="btn btn-danger btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/off">Turn off trade</a> 
 													@else
-													<a class="btn btn-primary btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/on">Turn on trade</a>
+													<a class="btn btn-success btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/on">Turn on trade</a>
+													@endif
+													@if($list->allow_withdrawal=='on')
+													<a class="btn btn-danger btn-sm m-1" href="{{ url('admin/dashboard/userwithdrawalmode') }}/{{$list->id}}/off">Disable withdrawal</a> 
+													@else
+													<a class="btn btn-success btn-sm m-1" href="{{ url('admin/dashboard/userwithdrawalmode') }}/{{$list->id}}/on">Enable withdrawal</a>
 													@endif
 														<a href="#"  data-toggle="modal" data-target="#topupModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Credit/Debit</a>
 														<a href="#" data-toggle="modal" data-target="#resetpswdModal{{$list->id}}"  class="btn btn-warning btn-sm m-1">Reset Password</a>

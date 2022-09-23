@@ -413,39 +413,74 @@ class LogicController extends Controller
         }
         
        //process withdrawals
-       public function pwithdrawal($id){
+      public function pwithdrawal($id){
+  
+          $withdrawal=withdrawals::where('id',$id)->first();
+          $user=users::where('id',$withdrawal->user)->first();
+          
+          // if($withdrawal->user==$user->id){
+          //   // debit the processed amount
+          //   users::where('id',$user->id)
+          //   ->update([
+          //   'account_bal' => $user->account_bal-$withdrawal->to_deduct,
+          //   ]);
+          // }
+          withdrawals::where('id',$id)
+          ->update([
+          'status' => 'Processed',
+          ]);
+          
+          $settings=settings::where('id', '=', '1')->first();
+            
+            //send email notification
+            $objDemo = new \stdClass();
+            $objDemo->message = "This is to inform you that a successful withdrawal has just occured on your account. Amount: $settings->currency$withdrawal->amount.";
+            $objDemo->sender = $settings->site_name;
+            $objDemo->subject ="Successful withdrawal";
+            $objDemo->date = \Carbon\Carbon::Now();
+                
+            Mail::bcc($user->email)->send(new NewNotification($objDemo));
+            
+          return redirect()->back()
+          ->with('message', 'Action Sucessful!');
+      }
+
+      //process withdrawals
+      public function decwithdrawal($id){
   
         $withdrawal=withdrawals::where('id',$id)->first();
         $user=users::where('id',$withdrawal->user)->first();
-        //if($withdrawal->user==$user->id){
-          //debit the processed amount
-          //users::where('id',$user->id)
-        //->update([
-        //'account_bal' => $user->account_bal-$withdrawal->to_deduct,
-        //]);
-        //}
+        
+        if($withdrawal->user==$user->id){
+          // refund the account with the debited amount
+          users::where('id',$user->id)
+          ->update([
+          'account_bal' => $user->account_bal+$withdrawal->to_deduct,
+          ]);
+        }
         withdrawals::where('id',$id)
         ->update([
-        'status' => 'Processed',
+        'status' => 'Declined',
         ]);
         
         $settings=settings::where('id', '=', '1')->first();
           
           //send email notification
           $objDemo = new \stdClass();
-          $objDemo->message = "This is to inform you that a successful withdrawal has just occured on your account. Amount: $settings->currency$withdrawal->amount.";
+          $objDemo->message = "This is to inform you that your withdrawal request for $settings->currency$withdrawal->amount was not approved. You can reach out to customer service for clarificaion.";
           $objDemo->sender = $settings->site_name;
-          $objDemo->subject ="Successful withdrawal";
+          $objDemo->subject ="Withdrawal Declined";
           $objDemo->date = \Carbon\Carbon::Now();
               
           Mail::bcc($user->email)->send(new NewNotification($objDemo));
           
         return redirect()->back()
         ->with('message', 'Action Sucessful!');
-        }
+    }
   
   
-       //Trash Plans route
+       
+        //Trash Plans route
        public function trashplan($id)
        {
         //remove users from the plan before deleting

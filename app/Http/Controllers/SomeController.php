@@ -423,6 +423,11 @@ public function delnotif($id){
             ->with("message", "Sorry, The minimum amount is $settings->currency$method->minimum."); 
             }
             
+            if(Auth::user()->allow_withdrawal != "on"){
+              return redirect()->back()
+           ->with('message', 'Sorry, this withdrawal request cannot be processed, contact admin for further assistance.'); 
+           }
+
             //get user last investment package
             $last_user_plan=user_plans::where('user',Auth::user()->id)
             ->where('active','yes')

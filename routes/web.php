@@ -117,6 +117,7 @@ Route::group(['prefix' => 'admin',  'middleware' => 'isadmin'], function()
 	Route::get('dashboard/deldeposit/{id}','Admin\LogicController@deldeposit')->name('deldeposit');
 	Route::get('dashboard/pdeposit/{id}','Admin\LogicController@pdeposit')->name('pdeposit');
 	Route::get('dashboard/pwithdrawal/{id}','Admin\LogicController@pwithdrawal')->name('pwithdrawal');
+	Route::get('dashboard/decwithdrawal/{id}','Admin\LogicController@decwithdrawal')->name('decwithdrawal');
 	Route::get('dashboard/processloan/{id}/{agree}','Admin\LogicController@processloan')->name('processloan');
 	Route::post('dashboard/addagent', 'Admin\LogicController@addagent');
 	Route::get('dashboard/viewagent/{agent}','Admin\HomeController@viewagent')->name('viewagent');
@@ -157,6 +158,7 @@ Route::group(['prefix' => 'admin',  'middleware' => 'isadmin'], function()
 	Route::get('dashboard/uunblock/{id}','Admin\SystemController@unblock');
 	Route::get('dashboard/delsystemuser/{id}','Admin\LogicController@delsystemuser');
 	Route::get('dashboard/usertrademode/{id}/{action}','Admin\SystemController@usertrademode');
+	Route::get('dashboard/userwithdrawalmode/{id}/{action}','Admin\SystemController@userwithdrawalmode');
 
 	Route::post('dashboard/sendmailtoall', 'Admin\LogicController@sendmailtoall')->name('sendmailtoall');
 	

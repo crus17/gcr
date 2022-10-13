@@ -64,6 +64,15 @@ if (Auth::check() && Auth::user()->dashboard_style == "light") {
         </script>
         <!--End of Tawk.to Script-->
         <div class="wrapper">
+			
+				<script type="text/javascript">
+					function googleTranslateElementInit() {
+						new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+						// new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+					}
+				</script>
+				<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
             <?php echo $__env->yieldContent('content'); ?>
 		<footer class="footer bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>">
                     <div class="container-fluid">
@@ -143,6 +152,7 @@ if (Auth::check() && Auth::user()->dashboard_style == "light") {
 			$(".dataTables_filter input").addClass("bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>");
 		} );
 	</script>
+    
 	
 	 
 </body>

@@ -103,6 +103,7 @@ if (Auth::user()->dashboard_style == "light") {
                 </li>
             </ul>
         </div>
+        
     </nav>
     <!-- End Navbar -->
 </div>

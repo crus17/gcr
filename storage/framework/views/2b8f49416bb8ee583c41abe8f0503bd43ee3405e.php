@@ -17,6 +17,9 @@ if (Auth::user()->dashboard_style == "light") {
         <div class="main-panel bg-<?php echo e($bg); ?>">
             <div class="content bg-<?php echo e($bg); ?>">
                 <div class="page-inner">
+                    <?php if($settings->translate_page !== "off"): ?>
+                        <div id="google_translate_element"></div>
+                    <?php endif; ?>
                     <div class="mt-2 mb-4">
                         <h2 class="text-<?php echo e($text); ?> pb-2">Welcome, <?php echo e(Auth::user()->name); ?>!</h2>
 

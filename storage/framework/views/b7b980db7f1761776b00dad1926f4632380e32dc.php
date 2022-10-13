@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">    
+<html lang="en-US" xml:lang="en">    
 
 <head>       
     <meta charset="UTF-8">  
@@ -149,6 +149,9 @@
             </div>
 			<div style="height:20px; padding:0px; margin:0px; width: 100%;">
 			<iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+            <?php if($settings->translate_page !== "off"): ?>
+                <div id="google_translate_element"></div>
+            <?php endif; ?>
 	   </div>
             <!-- Hero Section End -->   
             <!--About Start -->
@@ -1510,6 +1513,13 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             }
         </script>
     </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 

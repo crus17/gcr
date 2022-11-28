@@ -139,7 +139,7 @@ class LogicController extends Controller
           $objDemo->date = \Carbon\Carbon::Now();
           $objDemo->subject ="Credit Notification";
           
-          Mail::bcc($user->email)->send(new NewNotification($objDemo));
+          // Mail::bcc($user->email)->send(new NewNotification($objDemo));
           
         
           //add history

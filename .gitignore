@@ -1,6 +1,6 @@
 node_modules/
 composer.phar
-.env.*.php
-.env.php
+.env
+.env.example
 .DS_Store
 Thumbs.db

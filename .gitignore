@@ -1,4 +1,5 @@
 node_modules/
+storage/
 composer.phar
 .env
 .env.example

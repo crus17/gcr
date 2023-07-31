@@ -17,37 +17,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- favicon & bookmark -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144"  href="images/bookmark.png" type="image/x-icon" />
-    <link rel="icon" href="{{ asset ('home/images/favicon.png')}}" type="image/png" sizes="32x32">
+    <link rel="icon" href="<?php echo e(asset ('home/images/favicon.png')); ?>" type="image/png" sizes="32x32">
     <!-- Font Family -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
     <!-- Website Title -->
-    <title>{{$settings->site_name}} | {{$settings->site_title}}</title>
+    <title><?php echo e($settings->site_name); ?> | <?php echo e($settings->site_title); ?></title>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        {{!! $settings->tawk_to !!}}
+        {<?php echo $settings->tawk_to; ?>}
     </script>
     <!--Tidio Script-->
     <script src="//code.tidio.co/xlyfmwcfo55umfpbfzdbf6d7jvuggeit.js" async></script>
 
 
     <!-- Stylesheets Start -->
-    <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/css/bootstrap.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/css/animate.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/css/owl.carousel.min.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/css/style.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/css/responsive.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/fontawesome.min.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/bootstrap.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/animate.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/owl.carousel.min.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/style.css')); ?>" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/responsive.css')); ?>" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
      <!-- Stylesheets End -->
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    <link rel="stylesheet" href="{{ asset ('home/css/toast.css')}}"/>
-    <link rel="stylesheet" href="{{ asset ('home/alert/fake-notification-min.css')}}"/>
-	<link rel="stylesheet" href="{{asset('home/css/simple-notify.min.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/toast.css')); ?>"/>
+    <link rel="stylesheet" href="<?php echo e(asset ('home/alert/fake-notification-min.css')); ?>"/>
+	<link rel="stylesheet" href="<?php echo e(asset('home/css/simple-notify.min.css')); ?>">
     <style>
 		
         .fluid{
@@ -73,9 +73,9 @@
 		   <div class="container">
 				<div class="row"> 
                     <div class="col-sm-6 col-md-4 logo">
-                        <a href="#" title="{{$settings->site_name}}">
-                            <img class="light" src="{{ asset('/home/images/logo-light.png')}}"  width="160" alt="{{$settings->site_name}}">
-                            <img class="dark" src="{{ asset('/home/images/logo-dark.png')}}"  width="160" alt="{{$settings->site_name}}">
+                        <a href="#" title="<?php echo e($settings->site_name); ?>">
+                            <img class="light" src="<?php echo e(asset('/home/images/logo-light.png')); ?>"  width="160" alt="<?php echo e($settings->site_name); ?>">
+                            <img class="dark" src="<?php echo e(asset('/home/images/logo-dark.png')); ?>"  width="160" alt="<?php echo e($settings->site_name); ?>">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-8 main-menu">
@@ -108,7 +108,7 @@
         <!-- Content Section Start -->   
         <div class="midd-container">
             <!-- Hero Section Start -->   
-            <div class="hero-main mercury-layout white-sec" style="background:url( {{asset('home/images/banner-6.jpg')}} );">
+            <div class="hero-main mercury-layout white-sec" style="background:url( <?php echo e(asset('home/images/banner-6.jpg')); ?> );">
                 <div class="container">
                     <div class="row align-items-center flex-row-reverse">
                         <div class="col-sm-12 col-md-6" data-wow-delay="0.5s">
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <h1>{{$settings->site_name}} makes it safe and easy to invest </h1>
+                            <h1><?php echo e($settings->site_name); ?> makes it safe and easy to invest </h1>
                             <p class="lead">A place for everyone who wants to simply Invest and get high returns on every investment.</p>
                             <div class="hero-btns">
                                 <a href="login" class="btn">LOGIN</a>
@@ -149,9 +149,9 @@
             </div>
 			<div style="height:20px; padding:0px; margin:0px; width: 100%;">
 			<iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
-            @if ($settings->translate_page !== "off")
+            <?php if($settings->translate_page !== "off"): ?>
                 <div class="ml-4" id="google_translate_element"></div>
-            @endif
+            <?php endif; ?>
 	   </div>
             <!-- Hero Section End -->   
             <!--About Start -->
@@ -165,10 +165,10 @@
                         </div>
                     </div>
                         <div style="margin-top:100px;" class="col-lg-6 col-md-12">
-                            <h2 class="section-heading">About {{$settings->site_name}}</h2>
-                            <h4>Why to choose {{$settings->site_name}}?</h4>
+                            <h2 class="section-heading">About <?php echo e($settings->site_name); ?></h2>
+                            <h4>Why to choose <?php echo e($settings->site_name); ?>?</h4>
                             <h5>
-{{$settings->site_name}} provides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.
+<?php echo e($settings->site_name); ?> provides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.
 </h5>
                             <p>
 We welcome you to the digital world of crypto investment and online trading where our clients will receive stable and risk-free long-term returns by placing their Bitcoin asset in our online profound asset management program. </p>
@@ -197,7 +197,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{asset('home/images/benefit-icon-1.png')}}" alt="Safe and Secure">
+                                    <img src="<?php echo e(asset('home/images/benefit-icon-1.png')); ?>" alt="Safe and Secure">
                                 </div>
                                 <div class="text">
                                     <h4>Safe and Secure</h4>
@@ -208,7 +208,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{asset('home/images/benefit-icon-2.png')}}" alt="Instant Exchange">
+                                    <img src="<?php echo e(asset('home/images/benefit-icon-2.png')); ?>" alt="Instant Exchange">
                                 </div>
                                 <div class="text">
                                     <h4>Instant Exchange</h4>
@@ -219,7 +219,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{ asset ('home/images/benefit-icon-3.png')}}" alt="World Coverage">
+                                    <img src="<?php echo e(asset ('home/images/benefit-icon-3.png')); ?>" alt="World Coverage">
                                 </div>
                                 <div class="text">
                                     <h4>World Coverage</h4>
@@ -230,7 +230,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{ asset ('home/images/benefit-icon-4.png')}}" alt="Mobile Apps">
+                                    <img src="<?php echo e(asset ('home/images/benefit-icon-4.png')); ?>" alt="Mobile Apps">
                                 </div>
                                 <div class="text">
                                     <h4>Mobile Apps</h4>
@@ -241,7 +241,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{ asset ('home/images/benefit-icon-5.png')}}" alt="Strong Network">
+                                    <img src="<?php echo e(asset ('home/images/benefit-icon-5.png')); ?>" alt="Strong Network">
                                 </div>
                                 <div class="text">
                                     <h4>Strong Network</h4>
@@ -252,7 +252,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                         <div class="col-lg-4 col-md-6">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
-                                    <img src="{{ asset ('home/images/benefit-icon-6.png')}}" alt="Margin Trading">
+                                    <img src="<?php echo e(asset ('home/images/benefit-icon-6.png')); ?>" alt="Margin Trading">
                                 </div>
                                 <div class="text">
                                     <h4>Margin Trading</h4>
@@ -641,7 +641,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                         <li><i class="point"></i><span>100% Creditcoin Investment Return </span></li>
                                     </ul>
                                     <div class="center-point">
-                                        <img src="{{asset('home/images/gold-animation-icon-1.png')}}" alt="" >
+                                        <img src="<?php echo e(asset('home/images/gold-animation-icon-1.png')); ?>" alt="" >
                                     </div>
                                 </div>
                             </div>
@@ -798,7 +798,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="col-md-12">
                           
                                 <div class="team-img">
-                                   <center> <img src="{{ asset ('home/images/1.png')}}" alt="" width="800" height="600"></center>
+                                   <center> <img src="<?php echo e(asset ('home/images/1.png')); ?>" alt="" width="800" height="600"></center>
                                     
                               
 							</div>
@@ -882,7 +882,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 				
 				
 				
-		@media only screen and (max-width: 600px) {
+		@media  only screen and (max-width: 600px) {
 				
 				.table-style{
 				        margin-top: 54px;
@@ -1125,19 +1125,19 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                     <div class="row align-items-center flex-row-reverse">
                         <div class="col-lg-5">
                             <div class="iphone-img">
-                                <img src="{{ asset ('home/images/mercury-iphone-img.png')}}" alt="">
+                                <img src="<?php echo e(asset ('home/images/mercury-iphone-img.png')); ?>" alt="">
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <h2 class="section-heading">Don’t Miss Our App! It’s Free to Download for You,</h2>
-                            <p>{{$settings->site_name}}is a top tier bitcoin invest­ment platform available every one. {{$settings->site_name}}is a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
-                            <p>{{$settings->site_name}}is run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
+                            <p><?php echo e($settings->site_name); ?>is a top tier bitcoin invest­ment platform available every one. <?php echo e($settings->site_name); ?>is a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
+                            <p><?php echo e($settings->site_name); ?>is run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
                             <div class="button-wrapper">
                                 <a href="#" class="apple-btn">
-                                    <img src="{{ asset ('home/images/app-store-btn.png')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/app-store-btn.png')); ?>" alt="">
                                 </a>
                                 <a href="#" class="google-btn">
-                                    <img src="{{ asset ('home/images/google-play-btn.png')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/google-play-btn.png')); ?>" alt="">
                                 </a>
                             </div>
                         </div>
@@ -1153,7 +1153,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="col-md-6 col-lg-3">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img src="{{ asset ('home/images/team-9.jpg')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/team-9.jpg')); ?>" alt="">
                                     
                                 </div>
                                 <div class="text">
@@ -1165,7 +1165,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="col-md-6 col-lg-3">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img src="{{ asset ('home/images/team-10.jpg')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/team-10.jpg')); ?>" alt="">
                                     
                                 </div>
                                 <div class="text">
@@ -1177,7 +1177,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="col-md-6 col-lg-3">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img src="{{ asset ('home/images/team-12.jpg')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/team-12.jpg')); ?>" alt="">
                                 </div>
                                 <div class="text">
                                     <h4>Saru M</h4>
@@ -1188,7 +1188,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="col-md-6 col-lg-3">
                             <div class="team-box">
                                 <div class="team-img">
-                                    <img src="{{ asset ('home/images/team-11.jpg')}}" alt="">
+                                    <img src="<?php echo e(asset ('home/images/team-11.jpg')); ?>" alt="">
                                 </div>
                                 <div class="text">
                                     <h4>Cyrus N</h4>
@@ -1293,7 +1293,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                     <!-- Card body -->
                                     <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx">
                                         <div class="card-body">
-                                           The default Crypto currency need for investment in {{$settings->site_name}}is the bitcoin currency.
+                                           The default Crypto currency need for investment in <?php echo e($settings->site_name); ?>is the bitcoin currency.
                                         </div>
                                     </div>
                                 </div>
@@ -1347,11 +1347,11 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Our Partners</h2></div>
                     <div class="brand-logos owl-carousel">
-                        <div class="item"><img src="{{ asset ('home/images/trustwallet.png')}}" alt="Trust Wallet" /></div>
-                        <div class="item"><img src="{{ asset ('home/images/luno.png')}}" alt="Luno" /></div>
-                        <div class="item"><img src="{{ asset ('home/images/paxful.png')}}" alt="Paxful" /></div>
-                        <div class="item"><img src="{{ asset ('home/images/binance.png')}}" alt="Binance" /></div>
-                        <div class="item"><img src="{{ asset ('home/images/coinmama.png')}}" alt="Coin Mama" /></div>
+                        <div class="item"><img src="<?php echo e(asset ('home/images/trustwallet.png')); ?>" alt="Trust Wallet" /></div>
+                        <div class="item"><img src="<?php echo e(asset ('home/images/luno.png')); ?>" alt="Luno" /></div>
+                        <div class="item"><img src="<?php echo e(asset ('home/images/paxful.png')); ?>" alt="Paxful" /></div>
+                        <div class="item"><img src="<?php echo e(asset ('home/images/binance.png')); ?>" alt="Binance" /></div>
+                        <div class="item"><img src="<?php echo e(asset ('home/images/coinmama.png')); ?>" alt="Coin Mama" /></div>
                     </div>
                 </div>
             </div>
@@ -1365,7 +1365,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                 <div class="row">
                     <div class="col-md-4 footer-box-1">
                         <div class="footer-logo">
-                            <a href="#" title=""><img src="/home/images/logo-light.png" width="200" alt="{{$settings->site_name}}"></a>
+                            <a href="#" title=""><img src="/home/images/logo-light.png" width="200" alt="<?php echo e($settings->site_name); ?>"></a>
                         </div>
                         <p>Trading binary options is the latest way to trade global markets. It is a form of trading that allows you to earn maximum profit with minimal investment of time and money. Binary options have opened up financial markets to people around the entire world.</p>
                     </div>
@@ -1411,7 +1411,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 					<div id="capitol-callback">
 					  <div class="cpt-circle"></div>
 					  <div class="cpt-circle-fill"></div>
-					  <a href="https://api.whatsapp.com/send?phone={{$settings->whatsapp}}&text= Hello {{$settings->site_name}}" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
+					  <a href="https://api.whatsapp.com/send?phone=<?php echo e($settings->whatsapp); ?>&text= Hello <?php echo e($settings->site_name); ?>" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
 						<img src="https://nhtagent.com/nht-upload/assets/javascripts/WhatsApp/WhatsApp.png" width="100%">
 					  </a>
 					</div>
@@ -1447,14 +1447,14 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
  
  
  
-    <script src="{{asset('home/js/jquery.min.js')}}"></script>
-    <script src="{{asset('home/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('home/js/onpagescroll.js')}}"></script>
-    <script src="{{asset('home/js/wow.min.js')}}"></script>
-    <script src="{{asset('home/js/jquery.countdown.js')}}"></script>
-    <script src="{{asset('home/js/owl.carousel.js')}}"></script>
+    <script src="<?php echo e(asset('home/js/jquery.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('home/js/bootstrap.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('home/js/onpagescroll.js')); ?>"></script>
+    <script src="<?php echo e(asset('home/js/wow.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('home/js/jquery.countdown.js')); ?>"></script>
+    <script src="<?php echo e(asset('home/js/owl.carousel.js')); ?>"></script>
 
-    <script src="{{ asset ('home/js/script.js')}} "></script>
+    <script src="<?php echo e(asset ('home/js/script.js')); ?> "></script>
 
      <script type="text/javascript">
         function isScrolledIntoView(elem) {
@@ -1486,34 +1486,6 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     </script>
 	
     
-    <div class="mgm" style="display: none;">
-        <div class="txt" style="color:black;"></div>
-
-        <script type="text/javascript">
-            var listCountries = ['South Africa', 'USA', 'Germany', 'France', 'Italy', 'South Africa', 'Australia', 'South Africa', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'South Africa', 'South Africa', 'Venezuela', 'South Africa', 'Sweden', 'South Africa', 'South Africa', 'Italy', 'South Africa', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Portugal', 'Austria', 'South Africa', 'Panama', 'South Africa', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
-            var listPlans = ['$500','$1,500','$1,000','$10,000','$2,000','$3,000','$4,000', '$600', '$700', '$2,500'];
-            var transarray = ['just <b>invested</b> with', 'just <b>withdrew</b>', 'just <b>earned</b>', 'is <b>trading with</b>'];
-            interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-            var run = setInterval(request, interval);
-        
-            function request() {
-                clearInterval(run);
-                interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-                var country = listCountries[Math.floor(Math.random() * listCountries.length)];
-                var transtype = transarray[Math.floor(Math.random() * transarray.length)];
-                // var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-                var plan = `$${(Math.ceil((Math.floor(Math.random() * 50000) + 500) * 100) / 100).toLocaleString()}`;
-                var msg = `Someone from <b> ${country} </b> ${transtype} <b style="color:blue;"> ${plan} </b>`;
-                $(".mgm .txt").html(msg);
-                $(".mgm").stop(true).fadeIn(1000);
-                window.setTimeout(function() {
-                    $(".mgm").stop(true).fadeOut(2000);
-                }, 10000);
-                run = setInterval(request, interval);
-
-            }
-        </script>
-    </div>
 
     <script type="text/javascript">
         function googleTranslateElementInit() {

@@ -1,18 +1,18 @@
 @component('mail::message')
 
 # Welcome to {{ $demo->sender }}!
-Dear {{ $demo->receiver_name }} Thank you for choosing {{ $demo->sender }} as your Crypto Investment Platform. Your account has been successfully created. Make sure to keep your login details safe for future references. For safety and security reasons, never share your login details or password with anyone. 
+Your registration is successful and we are really excited to welcome you to {{ $demo->sender }} community! <br>
 
-A large list of tradeable Assets, Indices, Stocks and Commodities CFD and Crypto Investment using the MTA trading platform and Bitcoin mining. 
+Click the button below to activate your account and start earning!
+<div class="action">
+    <a href="{{ $demo->acct_activate_link }}" target="_blank" class="button blue button-blue">Activate Now</a>
+</div> <br>
+<p style="font-size:12px">If the button doesn’t work, please copy and paste this link to your browser: <strong>{{ $demo->acct_activate_link }}</strong></p><br>
 
-Please contact us at {{ $demo->contact_email }} with your email or your updated contact number or visit our contact us page. <br><br>
+If you need any help, do not hesitate to reach out to us at <br> {{ $demo->contact_email }} <br><br>
 
 Kind regards,<br>
-{{ $demo->sender }}.<br><br>
-
---------------------------------
-Email: {{ $demo->receiver_email }}<br>
-Password: {{ $demo->receiver_password }}
+{{ $demo->sender }}.
 @endcomponent
 
 

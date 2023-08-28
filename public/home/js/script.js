@@ -446,9 +446,9 @@ $(document).ready(function ($) {
         const element = entry.target;
         const animationName = element.getAttribute('data-animate');
         const animationDelay = element.getAttribute('data-delay');
-
         element.classList.add('animated', animationName);
         element.style.animationDelay = animationDelay;
+        element.style.visibility = 'visible';
         observer.unobserve(element); // Stop observing once the element is animated
       }
     });
@@ -463,7 +463,7 @@ $(document).ready(function ($) {
   // Observe elements with the data-animate attribute
   const elements = document.querySelectorAll('[data-animate]');
   elements.forEach((element) => {
-    // element.style.visibility = 'hidden'; // Hide initially
+    element.style.visibility = 'hidden'; // Hide initially
     observer.observe(element);
   });
 });

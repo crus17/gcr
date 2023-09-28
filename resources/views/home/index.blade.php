@@ -30,8 +30,7 @@
         {{!! $settings->tawk_to !!}}
     </script>
     <!--Tidio Script-->
-    <script src="//code.tidio.co/xlyfmwcfo55umfpbfzdbf6d7jvuggeit.js" async></script>
-
+    <script src="//code.tidio.co/e73slnotyabi8idhkaicoc0efe96i2jh.js" async></script>
 
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>
@@ -1416,7 +1415,15 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 					  <div class="cpt-circle"></div>
 					  <div class="cpt-circle-fill"></div>
 					  <a href="https://api.whatsapp.com/send?phone={{$settings->whatsapp}}&text= Hello {{$settings->site_name}}" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
-						<img src="https://nhtagent.com/nht-upload/assets/javascripts/WhatsApp/WhatsApp.png" width="100%">
+						<img src="{{ asset ('home/images/whatsapp.png')}}" width="100%">
+					  </a>
+					</div>
+					
+                    <div id="capitol-callback">
+					  <div class="instag-circle"></div>
+					  <div class="instag-circle-fill"></div>
+					  <a href="https://instagram.com/globalcryptoaitrade?igshid=MzRIODBiNWFIZA==" id="InstagramBtnDesktop" target="_blank" class="main-button" lang="en">
+						<img src="{{ asset ('home/images/instagram.png')}}" width="100%">
 					  </a>
 					</div>
 

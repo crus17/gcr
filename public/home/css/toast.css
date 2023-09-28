@@ -72,7 +72,7 @@
     }
 }
 
-#capitol-callback {
+#capitol-callback, #instagramBtn {
     font-family: Arial;
     position: fixed;
     width: 72px;
@@ -82,6 +82,9 @@
     right: auto;
     left: 40px;
     z-index: 1;
+}
+#instagramBtn {
+    left: 150px;
 }
 
 .cpt-circle,
@@ -113,7 +116,6 @@
     top: -75%;
 }
 .instag-circle{
-    left: 100%;
     border: 2px solid #9d2d0e;
 }
 
@@ -129,11 +131,13 @@
     top: -27.5%;
 }
 .instag-circle-fill{
-    left: 150%;
     background-color: #9d400e;
     box-shadow: 0 0 2px 0 #9d400e !important;
 }
-
+.anchor-btn {
+    width: 50px;
+    height: 50px;
+}
 
 
 .main-button {

@@ -1411,22 +1411,22 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 					<body>
 					 
 					  
-					<div id="capitol-callback">
-					  <div class="cpt-circle"></div>
-					  <div class="cpt-circle-fill"></div>
-					  <a href="https://api.whatsapp.com/send?phone={{$settings->whatsapp}}&text= Hello {{$settings->site_name}}" id="WhatsAppBtnDesktop" target="_blank" class="anchor-btn" lang="en">
-						<img src="{{ asset ('home/images/whatsapp.png')}}" width="100%">
-					  </a>
-					</div>
-					
-                    <div id="instagramBtn">
-					  <div class="instag-circle"></div>
-					  <div class="instag-circle-fill"></div>
-					  <a href="https://instagram.com/globalcryptoaitrade?igshid=MzRIODBiNWFIZA==" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
-						<img src="{{ asset ('home/images/instagram.png')}}" width="100%">
-					  </a>
-					</div>
-
+                        <a href="https://api.whatsapp.com/send?phone={{$settings->whatsapp}}&text= Hello {{$settings->site_name}}" id="WhatsAppBtnDesktop" target="_blank" class="anchor-btn" lang="en">
+                            <div id="capitol-callback">
+                                <div class="cpt-circle"></div>
+                                <div class="cpt-circle-fill"></div>
+                                <img src="{{ asset ('home/images/whatsapp.png')}}" width="100%">
+                            </div>
+                        </a>
+                            
+                        <a href="https://instagram.com/globalcryptoaitrade?igshid=MzRIODBiNWFIZA==" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
+                            <div id="instagramBtn">
+                                <div class="instag-circle"></div>
+                                <div class="instag-circle-fill"></div>
+                                <img src="{{ asset ('home/images/instagram.png')}}" width="100%">
+                            </div>
+                        </a>
+                            
 
 
 

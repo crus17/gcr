@@ -28,7 +28,8 @@ if (Auth::check() && Auth::user()->dashboard_style == "light") {
 	<!-- CSS Files -->
 	<link rel="stylesheet" href="{{asset('dash/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('dash/css/fonts.min.css')}}">
-	<link rel="stylesheet" href="{{asset('dash/css/atlantis.min.css')}}">
+	<link rel="stylesheet" href="{{asset('dash/css/atlantis.css')}}">
+	<!-- <link rel="stylesheet" href="{{asset('dash/css/atlantis.min.css')}}"> -->
 	<link rel="stylesheet" href="{{asset('dash/css/customs.css')}}">
 	<link rel="stylesheet" href="{{asset('dash/css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('dash/css/simple-notify.min.css')}}">

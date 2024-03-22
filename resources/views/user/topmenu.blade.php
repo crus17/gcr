@@ -84,9 +84,6 @@ if (Auth::user()->dashboard_style == "light") {
                     <ul class="dropdown-menu dropdown-user animated fadeIn">
                         <div class="dropdown-user-scroll scrollbar-outer">
                             <li>
-                                <a class="dropdown-item" href="{{ url('dashboard/changepassword') }}">Change Password</a>
-                                <a class="dropdown-item" href="{{ url('dashboard/profile') }}">Update Account</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">

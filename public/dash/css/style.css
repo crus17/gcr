@@ -179,3 +179,22 @@
 .red .price-button:hover {
     background: #f23c3c;
 }
+
+/* Promo */
+.platform-promo{
+    display: flex;
+    border-radius: 20px;
+    margin: 0 15px;
+    overflow: hidden;
+    align-items: center;
+}
+.promo-ads, .promo-img{
+    position: relative;
+    flex: 1;
+}
+.promo-ads{
+    padding: 20px;
+}
+.promo-img img{
+    width: 100%;
+}

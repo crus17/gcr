@@ -7,23 +7,20 @@
         <div class="sidebar-content">
             <div class="user">
                 <div class="info">
-                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-                        <span>
-                            {{ Auth::user()->name }}
-                            {{-- <span class="user-level">{{$settings->site_name }} User</span> --}}
-                            <span class="caret"></span>
-                        </span>
-                    </a>
-                    <div class="clearfix"></div>
-                    <div class="collapse in" id="collapseExample">
-                        <ul class="nav">
-                            <li>
-                                <a href="{{ url('dashboard/profile') }}">
-                                    <span class="link-collapse">Account Settings</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- Inser Avatar -->
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="profile-userpic mx-auto">
+                            <img src="{{$settings->site_address}}/cloud/app/images/{{Auth::user()->photo}}" class="avatar-img" alt="Avatar">
+                        </div>
+                        <h5 class="card-title">{{ Auth::user()->name }} {{ Auth::user()->l_name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ Auth::user()->email }}</h6>
+                        <div class="d-flex justify-content-around px-4">
+                            <a href="{{ url('dashboard/profile') }}">
+                                <p class="m-0 px-3 py-1 rounded">Edit Profile</p>
+                            </a>
+                        </div>
                     </div>
+                    <!-- Avatar Ends -->
                 </div>
             </div>
             <ul class="nav nav-primary">

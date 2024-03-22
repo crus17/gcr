@@ -90,8 +90,8 @@
                                 
                             </div>
                         </div>
-                        <div class="col-lg-9 p-2">
-                            <div class="card p-5 shadow-lg bg-{{$bg}}">
+                        <div class="col-lg-9">
+                            <div class="card p-5 shadow-lg bg-{{$bg}} h-100">
                                 <h2> <span class="fa fa-user"></span> &nbsp; {{ Auth::user()->name }} {{ Auth::user()->l_name }}</h2>
                                 <h5> <span class="fa fa-location-arrow"></span> &nbsp; {{ Auth::user()->address }}, {{ Auth::user()->country }}</h5>
                                 <h5> <span class="fa fa-envelope"></span> &nbsp; {{ Auth::user()->email }}  </h5>
@@ -113,6 +113,9 @@
                                 </form>
                                 <div>
                                     <input type="submit" data-toggle="modal" data-target="#edit" value="Update Info" class="btn btn-primary">
+                                </div>
+                                <div class="my-2">
+                                    <input type="submit" data-toggle="modal" data-target="#editpassword" value="Change Password" class="btn btn-primary">
                                 </div>
 
                                 <div id="edit" class="modal fade" role="dialog">
@@ -141,6 +144,56 @@
                                                     <input type="hidden" name="user_id" value="">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                     <input type="submit" class="btn btn-primary" value="Update">
+                                            </form>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script type="text/javascript">
+                                            $("#styleform").on('change',function(){
+                                            $.ajax({
+                                                url: "{{url('/dashboard/changetheme')}}",
+                                                type: 'POST',
+                                                data:$("#styleform").serialize(),
+                                                success: function (data) {
+                                                    location.reload(true);
+                                                },
+                                                error: function (data) {
+                                                    console.log('Something went wrong');
+                                                },
+
+                                            });
+                                        });
+                                    </script>
+                                </div>
+
+                                <div id="editpassword" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                        <div class="modal-header .modal-dialog-centered bg-{{$bg}}">
+                                            Change Password
+                                            <button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body bg-{{$bg}}">
+                                             <form method="post" action="{{action('UsersController@updatepass')}}">
+                                                <div class="form-control bg-{{$bg}} mb-2">
+                                                    <h5 class="text-{{$text}}">Old Password</h5>
+                                                    <input type="password" name="old_password" class="form-control text-{{$text}} bg-{{$bg}}" required>
+                                                </div>
+                                                <div class="form-control bg-{{$bg}} mb-2">
+                                                    <h5 class="text-{{$text}}">New Password* :</h5>
+                                                    <input type="password" name="password" class="form-control text-{{$text}} bg-{{$bg}}" required>
+                                                </div>
+                                                <div class="form-control bg-{{$bg}} mb-2">
+                                                    <h5 class="text-{{$text}}">Confirm Password*:</h5>
+                                                    <input type="password" name="password_confirmation" class="form-control text-{{$text}} bg-{{$bg}}" required>
+                                                </div> <br>
+                                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                                    
+                                                <input type="hidden" name="id" value="{{Auth::user()->id}}">
+                                                <input type="hidden" name="current_password" value="{{Auth::user()->password}}">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }}"><br/>
                                             </form>
                                         </div>
                                         </div>

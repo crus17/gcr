@@ -98,18 +98,27 @@ if (Auth::user()->dashboard_style == "light") {
                         </div>
                     </div>
                     @endif
+                    <!-- Beginning of Promo banner -->
+                    <div class="platform-promo bg-{{$bg}}">
+                        <div class="promo-ads">
+                            <h1 class="text-{{$text}}">Get {{$settings->site_name}} Cashback</h1>
+                            <p>Invite vour friends to use {{$settings->site_name}} and get up to $100 Cashback straight to vour wallet</p>
+                            <div class="d-flex">
+                                <button class="btn btn-primary mr-2 rounded-pill">Learn more</button>
+                                <button class="btn bg-transparent text-muted">Terms & condition</button>
+                            </div>
+                        </div>
+                        <div class="promo-img d-sm-none d-md-block">
+                            <img src="{{ asset('dash/images/bull.jpeg')}}" alt="">
+                        </div>
+                    </div>
                     <!-- Beginning of  Dashboard Stats  -->
-                    <div class="row row-card-no-pd bg-{{$bg}} shadow-lg">
+                    <div class="row row-card-no-pd">
                         <div class="col-sm-6 col-md-3">
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body ">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-download text-warning"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Deposited</p>
                                                 @foreach($deposited as $deposited)
@@ -129,12 +138,7 @@ if (Auth::user()->dashboard_style == "light") {
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body ">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-chart-line text-success"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Profit</p>
                                                 <h4 class="card-title text-{{$text}}">{{$settings->currency}}{{ number_format(Auth::user()->roi, 2, '.', ',')}}</h4>
@@ -144,35 +148,11 @@ if (Auth::user()->dashboard_style == "light") {
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-round bg-{{$bg}}">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-gift text-danger"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
-                                            <div class="numbers">
-                                                <p class="card-category">Bonus</p>
-                                                <h4 class="card-title text-{{$text}}">{{$settings->currency}} {{ number_format($total_bonus->bonus, 2, '.', ',')}}</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
                         <div class="col-sm-6 col-md-3">
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-retweet text-primary"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Ref. Bonus</p>
                                                 <h4 class="card-title text-{{$text}}">{{$settings->currency}}{{ number_format(Auth::user()->ref_bonus, 2, '.', ',')}}</h4>
@@ -186,15 +166,10 @@ if (Auth::user()->dashboard_style == "light") {
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body ">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="flaticon-coins text-success"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Balance</p>
-                                                <h4 class="card-title text-{{$text}}">{{$settings->currency}}{{ number_format(Auth::user()->account_bal, 2, '.', ',')}}</h4> <br>
+                                                <h4 class="card-title text-{{$text}}">{{$settings->currency}}{{ number_format(Auth::user()->account_bal, 2, '.', ',')}}</h4>
                                                 
                                             </div>
                                         </div>
@@ -206,12 +181,7 @@ if (Auth::user()->dashboard_style == "light") {
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-briefcase text-danger"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Total Packages</p>
                                                 @if(count($user_plan)>0)
@@ -229,12 +199,7 @@ if (Auth::user()->dashboard_style == "light") {
                             <div class="card card-stats card-round bg-{{$bg}}">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-5">
-                                            <div class="icon-big text-center">
-                                                <i class="fa fa-hourglass-start text-primary"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-7 col-stats">
+                                        <div class="col col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Active Packages</p>
                                                 

@@ -48,7 +48,7 @@
 							<div class="profile-sidebar card bg-{{$bg}} shadow rounded pb-5 pt-5">
                                 <!-- SIDEBAR USERPIC -->
                                 <div class="profile-userpic">
-                                  <img src="{{$settings->site_address}}/cloud/app/images/{{Auth::user()->photo}}" class="img-responsive" alt="">
+                                  <img src="{{$settings->site_address}}/cloud/app/images/{{Auth::user()->photo}}" onerror="this.onerror=null; this.src=`{{ asset('dash/images/avatar.png')}}`;" class="img-responsive" alt="">
                                 </div>
                                 <!-- END SIDEBAR USERPIC -->
                                 <!-- SIDEBAR USER TITLE -->

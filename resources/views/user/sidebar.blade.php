@@ -10,7 +10,7 @@
                     <!-- Inser Avatar -->
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="profile-userpic mx-auto">
-                            <img src="{{$settings->site_address}}/cloud/app/images/{{Auth::user()->photo}}" class="avatar-img" alt="Avatar">
+                            <img src="{{$settings->site_address}}/cloud/app/images/{{Auth::user()->photo}}" onerror="this.onerror=null; this.src=`{{ asset('dash/images/avatar.png')}}`;" class="avatar-img" alt="Avatar">
                         </div>
                         <h5 class="card-title">{{ Auth::user()->name }} {{ Auth::user()->l_name }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ Auth::user()->email }}</h6>

@@ -101,7 +101,7 @@ if (Auth::user()->dashboard_style == "light") {
                     <!-- Beginning of Promo banner -->
                     <div class="platform-promo bg-{{$bg}}">
                         <div class="promo-ads">
-                            <h1 class="text-{{$text}}">Get {{$settings->site_name}} Cashback</h1>
+                            <h1 class="text-{{$text}}">Get a cashback</h1>
                             <p>Invite vour friends to use {{$settings->site_name}} and get up to $100 Cashback straight to vour wallet</p>
                             <div class="d-flex">
                                 <button class="btn btn-primary mr-2 rounded-pill">Learn more</button>

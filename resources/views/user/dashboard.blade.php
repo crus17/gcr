@@ -116,12 +116,16 @@ if (Auth::user()->dashboard_style == "light") {
                         <!-- Quick action buttons -Withdraw Deposit  -->
                         <div class="quick-action-btn-group">
                             <h4 class="card-title text-{{$text}} flex-1">My Wallet</h4>
-                            <div class="btn btn-success action-button">
-                                Deposit
-                            </div>
-                            <div class="btn btn-warning action-button">
-                                Withdraw
-                            </div>
+                            <a href="#" data-toggle="modal" data-target="#depositModal">
+                                <div class="btn btn-success action-button">
+                                    Deposit
+                                </div>
+                            </a>
+                            <a href="{{ url('dashboard/withdrawals') }}" >
+                                <div class="btn btn-warning action-button">
+                                    Withdraw
+                                </div>
+                            </a>
                         </div>
                         <div class="quick-action-view-balance">
                             <p class="quick-action-label text-mute">Total Balance</p>
@@ -246,6 +250,8 @@ if (Auth::user()->dashboard_style == "light") {
                 </div>
                 <!-- end of chart -->
             </div>
+			@include('user.modals')	
+
     @endsection
    
     

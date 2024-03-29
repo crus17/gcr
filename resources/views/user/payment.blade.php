@@ -13,7 +13,7 @@
         @include('user.sidebar')
         <div class="main-panel bg-{{$bg}}">
 			<div class="content bg-{{$bg}}">
-				<div class="page-inner">
+				<div class="page-inner page-inner-{{$bg}}">
 					<div class="mt-2 mb-4">
 						<h1 class="title1 text-{{$text}}">Make Payment</h1>
 					</div>

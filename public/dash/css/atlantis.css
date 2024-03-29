@@ -774,8 +774,12 @@ body {
   position: relative; }
 .page-wrapper.has-sidebar .page-inner {
     margin-right: 22.5rem; }
-.page-inner{
+.page-inner-dark{
     background: rgba(255, 255, 255, 0.05)
+}
+
+.page-inner-light{
+    background: rgba(0, 0, 0, 0.10)
 }
 .page-navs {
   position: relative;

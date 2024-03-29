@@ -15,7 +15,7 @@
         @include('user.sidebar')
         <div class="main-panel bg-{{$bg}}">
 			<div class="content bg-{{$bg}}">
-				<div class="page-inner">
+				<div class="page-inner page-inner-{{$bg}}">
 					<div class="row mb-5">
 						<div class="col text-center card bg-{{$bg}} p-3">
 							<h1 class="title1 text-{{$text}}">{{$settings->site_name}} Support</h1>

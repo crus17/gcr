@@ -185,7 +185,6 @@
 .platform-promo{
     display: flex;
     border-radius: 20px;
-    margin: 0 15px;
     overflow: hidden;
     align-items: center;
 }
@@ -198,4 +197,44 @@
 }
 .promo-img img{
     width: 100%;
+}
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.numbers p{
+    line-height: 1!important;
+}
+.numbers{
+    flex: 1;
+}
+
+.quick-action-view{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.quick-action-btn-group{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+.quick-action-label{
+    line-height: 1;
+    margin: 0;
+}
+.quick-action-view-balance{
+    /* font-size: ; */
+}
+
+.action-button{
+    border-radius: 15px;
 }

@@ -218,14 +218,15 @@
 .quick-action-view{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 0;
     border-radius: 20px;
     margin-top: 10px;
 }
 .quick-action-btn-group{
     display: flex;
     column-gap: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
 }
 .quick-action-label{
     line-height: 1;
@@ -237,4 +238,14 @@
 
 .action-button{
     border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.chart{
+    background-image: url('../images/chart.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    aspect-ratio: 2/1;
 }

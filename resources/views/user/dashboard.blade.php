@@ -112,26 +112,23 @@ if (Auth::user()->dashboard_style == "light") {
                             <img src="{{ asset('dash/images/bull.jpeg')}}" alt="">
                         </div>
                     </div>
-                    <!-- Quick action buttons -Withdraw Deposit  -->
-                    <div class="quick-action-view bg-{{$bg}}">
-                        
-                        <div class="quick-action-view-balance">
-                            <p class="quick-action-label text-mute">Total Balance</p>
-                            <h4 class="card-title text-{{$text}}">{{$settings->currency}}{{ number_format(Auth::user()->roi, 2, '.', ',')}}</h4>
-                        </div>
-                        
+                    <div class="quick-action-view bg-{{$bg}} col-sm-10 col-md-6">
+                        <!-- Quick action buttons -Withdraw Deposit  -->
                         <div class="quick-action-btn-group">
+                            <h4 class="card-title text-{{$text}} flex-1">My Wallet</h4>
                             <div class="btn btn-success action-button">
                                 Deposit
                             </div>
-                            <div class="btn btn-info action-button">
+                            <div class="btn btn-warning action-button">
                                 Withdraw
                             </div>
-                            <div class="btn btn-warning action-button">
-                                Transfer
-                            </div>
                         </div>
-
+                        <div class="quick-action-view-balance">
+                            <p class="quick-action-label text-mute">Total Balance</p>
+                            <h4 class="card-title text-{{$text}} font-weight-bold">{{$settings->currency}}{{ number_format(Auth::user()->roi, 2, '.', ',')}}</h4>
+                        </div>
+                        <div class="chart"></div>
+                        
                     </div>
 
                     <!-- Beginning of  Dashboard Stats  -->

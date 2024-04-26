@@ -1,5 +1,36 @@
 
 			
+			<!-- Credit Wallet Modal -->
+			<div id="creditWalletModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header bg-{{$bg}}">
+					<h4 class="modal-title text-{{$text}}">Transfer to Wallet</h4>
+					<button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body bg-{{$bg}}">
+						<form style="padding:3px;" role="form" method="post" action="">
+							<input class="form-control p-3 text-{{$text}} bg-{{$bg}}" placeholder="Enter amount here" type="text" name="amount" required><br/>
+								
+							<div class="form-group">
+								<h5 class="text-{{$text}}">Select where to debit</h5>
+								<select class="form-control bg-{{$bg}} text-{{$text}}" name="type" required>
+								<option value="">Select Column</option>
+								<option value="Deposit">Deposit</option>
+								<option value="Profit">Profit</option>
+								<option value="Ref_Bonus">Ref_Bonus</option>
+								</select>
+							</div>
+							
+							<input type="hidden" name="_token" value="{{ csrf_token() }}">
+							<input type="submit" class="btn btn-primary" value="Submit" onclick="this.disabled = true; form.submit(); this.value='Please Wait ...';" />
+						</form>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!-- Credit Wallet Modal -->
 			
 			<!-- Deposit Modal -->
 			<div id="depositModal" class="modal fade" role="dialog">

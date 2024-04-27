@@ -325,7 +325,7 @@ class LogicController extends Controller
             //add funds to user's account
           users::where('id',$user->id)
         ->update([
-        'account_bal' => $user->account_bal + $deposit->amount,
+        'deposit_bal' => $user->deposit_bal + $deposit->amount,
         //'activated_at' => \Carbon\Carbon::now(),
         //'last_growth' => \Carbon\Carbon::now(),
         ]);
@@ -344,7 +344,7 @@ class LogicController extends Controller
             $agent=users::where('id',$user->ref_by)->first();
             users::where('id',$user->ref_by)
             ->update([
-            'account_bal' => $agent->account_bal + $earnings,
+            'referral_bal' => $agent->referral_bal + $earnings,
             ]);
             
             //create history

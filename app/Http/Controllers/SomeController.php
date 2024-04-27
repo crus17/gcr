@@ -531,134 +531,63 @@ public function delnotif($id){
     
     //Asset Transfer
      public function assettransfer(Request $request){
-        //get settings
-        $settings=settings::where('id','1')->first();
-        
-          if($settings->enable_kyc =="yes"){
-            if(Auth::user()->account_verify != "Verified"){
-                return redirect()->back()->with('message','Your account must be verified before you can make withdrawal.');
-            }
-          }
-        
-        $method=wdmethods::where('id',$request['method_id'])->first();
-        $charges_percentage = $request['amount'] * $method->charges_percentage/100;
-        $to_withdraw = $request['amount'] + $charges_percentage + $method->charges_fixed;
-        //return if amount is lesser than method minimum withdrawal amount
-        
-
-        if(Auth::user()->account_bal < $to_withdraw){
-            return redirect()->back()
-        ->with('message', 'Sorry, your account balance is insufficient for this request.'); 
-        }
-        
-        if($request['amount'] < $method->minimum){
-            return redirect()->back()
-        ->with("message", "Sorry, The minimum amount is $settings->currency$method->minimum."); 
-        }
-        
-        if(Auth::user()->allow_withdrawal != "on"){
-          return redirect()->back()
-        ->with('message', 'Sorry, this withdrawal request cannot be processed, contact admin for further assistance.'); 
-        }
-
-        //get user last investment package
-        $last_user_plan=user_plans::where('user',Auth::user()->id)
-        ->where('active','yes')
-        ->orderby('activated_at','ASC')->first();
-        
-        /*if(count($last_user_plan) < 1){
-            return redirect()->back()->with('message','You can not make withdrawal yet. You must have an investment running.');
-        }*/
-        
-        //if 30 days has reached since activation
-        /*if($last_user_plan->activated_at->diffInDays() < 30){
-            return redirect()->back()->with('message','Your investment(s) is not due for withdrawal yet. You must wait till 30 days after your last investment.');
-        }*/
         
       //get user
-      $user=users::where('id',Auth::user()->id)->first();
+      $user=users::where('id', Auth::user()->id)->first();
       
-      $amount= $request['amount'];
-      $ui = $user->id;
+      $transfer_amount= $request['amount'];
+      $debit_purse= $request['debit_purse'];
+      $user_id = $user->id;
 
-      if(empty($user->btc_address) && empty($user->ltc_address) && empty($user->eth_address) && empty($user->account_no)){
-      return redirect()->route('acountdetails')
-      ->with('message', 'You must set up your coins wallet address before you can withdraw.');
-    }
+      // Deposit
+      // Profit
+      // Ref_Bonus
+      if($debit_purse=='Deposit'){
+
+        if(Auth::user()->deposit_bal < $transfer_amount){
+            return redirect()->back()
+        ->with('message', 'Sorry, your depoist balance is insufficient for this request.'); 
+        }
+
+        // TODO: create a deposit_bal and account_bal column
+        users::where('id',$user->id)->update(['deposit_bal' => $user->deposit_bal - $transfer_amount,]);
+        users::where('id',$user->id)->update(['account_bal' => $user->account_bal + $transfer_amount,]);
       
-      //debit user
-      users::where('id',$user->id)
-      ->update([
-      'account_bal' => $user->account_bal-$to_withdraw,
-      ]);
-  
-      //send notification
-      $settings=settings::where('id', '=', '1')->first();
-    
-    //send email notification
-    $objDemo = new \stdClass();
-    $objDemo->message = "This is to inform you that a successful withdrawal has just occured on your account. Amount: $settings->currency$amount.";
-    $objDemo->sender = $settings->site_name;
-    $objDemo->date = \Carbon\Carbon::Now();
-    $objDemo->subject ="Successful withdrawal";
-        
-    // Mail::bcc($user->email)->send(new NewNotification($objDemo));
+      } else if($debit_purse=='Profit'){
+       
+        if(Auth::user()->profit < $transfer_amount){
+            return redirect()->back()
+        ->with('message', 'Sorry, your profit balance is insufficient for this request.'); 
+        }
+
+        // TODO: create a profit and account_bal column
+        users::where('id',$user->id)->update(['profit' => $user->profit - $transfer_amount,]);
+        users::where('id',$user->id)->update(['account_bal' => $user->account_bal + $transfer_amount,]);
       
-      if($request['payment_mode']=='Bitcoin'){
-        if(empty($user->btc_address)){
-            return redirect()->route('acountdetails')
-            ->with('message', 'You must set up your coins wallet address before you can withdraw.');
+      } else if($debit_purse=='Ref_Bonus'){
+       
+        if(Auth::user()->referral_bal < $transfer_amount){
+            return redirect()->back()
+        ->with('message', 'Sorry, your Referral bonus balance is insufficient for this request.'); 
         }
-      $payment_mode = "Bitcoin";
-      $coin="BTC"; 
-      $wallet=$user->btc_address;
-      //create auto transaction
-      if($settings->withdrawal_option =="auto"){
-        return $this->cpwithdraw($amount, $coin, $wallet, $ui, $to_withdraw);
+
+        // TODO: create a referral_bal and account_bal column
+        users::where('id',$user->id)->update(['referral_bal' => $user->referral_bal - $transfer_amount,]);
+        users::where('id',$user->id)->update(['account_bal' => $user->account_bal + $transfer_amount,]);
+      
       }
-      }elseif($request['payment_mode']=='Ethereum'){
-        if(empty($user->eth_address)){
-            return redirect()->route('acountdetails')
-            ->with('message', 'You must set up your coins wallet address before you can withdraw.');
-        }
-      $payment_mode = "Ethereum";
-      $coin="ETH"; 
-      $wallet=$user->eth_address;
-      //create auto transaction
-      if($settings->withdrawal_option =="auto"){
-        return $this->cpwithdraw($amount, $coin, $wallet, $ui, $to_withdraw);
-      }
-      }elseif($request['payment_mode']=='Litecoin'){
-        if(empty($user->ltc_address)){
-            return redirect()->route('acountdetails')
-            ->with('message', 'You must set up your coins wallet address before you can withdraw.');
-        }
-      $payment_mode = "Litecoin";
-      $coin="LTC";  
-      $wallet=$user->ltc_address;
-      //create transaction
-    //create auto transaction
-      if($settings->withdrawal_option =="auto"){
-        return $this->cpwithdraw($amount, $coin, $wallet, $ui, $to_withdraw);
-      }
-      }else{
-          $payment_mode = "Bank transfer";
-      }
-      //save withdrawal info
-        $dp=new withdrawals();
-                  
-        //$dp->txn_id= $txn_id;         
-        $dp->amount= $amount;
-        $dp->to_deduct= $to_withdraw;
-        $dp->payment_mode= "$payment_mode";
-        $dp->status= 'Pending';
-        $dp->user= $user->id;
-        
-        $dp->save();  
-        
-        return redirect()->back()
-      ->with('message', 'Action Sucessful! Please wait for system to process your request.');
-         
+      
+      // Create a transaction record
+      tp_transactions::create([
+        'user' => $user_id,
+        'plan' => $debit_purse+" to wallet",
+        'amount'=>$transfer_amount,
+        'type'=>'Wallet',
+      ]); 
+      
+      return redirect()->back()
+        ->with('message', 'Wallet Transfer Sucessful!');
+      
           
     }
 

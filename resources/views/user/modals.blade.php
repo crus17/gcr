@@ -10,16 +10,16 @@
 					<button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="modal-body bg-{{$bg}}">
-						<form style="padding:3px;" role="form" method="post" action="">
+						<form style="padding:3px;" role="form" method="post" action="{{action('SomeController@assettransfer')}}">
 							<input class="form-control p-3 text-{{$text}} bg-{{$bg}}" placeholder="Enter amount here" type="text" name="amount" required><br/>
 								
 							<div class="form-group">
 								<h5 class="text-{{$text}}">Select where to debit</h5>
-								<select class="form-control bg-{{$bg}} text-{{$text}}" name="type" required>
+								<select class="form-control bg-{{$bg}} text-{{$text}}" name="debit_purse" required>
 								<option value="">Select Column</option>
 								<option value="Deposit">Deposit</option>
 								<option value="Profit">Profit</option>
-								<option value="Ref_Bonus">Ref_Bonus</option>
+								<option value="Ref_Bonus">Ref. Bonus</option>
 								</select>
 							</div>
 							

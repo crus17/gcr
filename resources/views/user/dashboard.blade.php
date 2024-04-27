@@ -114,8 +114,7 @@ if (Auth::user()->dashboard_style == "light") {
                     </div>
 
                     <div class="d-flex mt-3 ml-2">
-                        <button class="btn btn-primary mr-2 rounded-pill">Transfer assets to Wallet</button>
-                        <a href="#" data-toggle="modal" data-target="#creditWalletModal"  class="btn btn-success btn-sm m-2">Get access</a>
+                        <a href="#" data-toggle="modal" data-target="#creditWalletModal"  class="btn btn-primary mr-2 rounded-pill">Transfer assets to Wallet</a>
                     </div>
                     
                     <!-- Beginning of  Dashboard Stats  -->

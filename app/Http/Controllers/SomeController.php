@@ -591,9 +591,9 @@ public function delnotif($id){
       // Create a transaction record
       tp_transactions::create([
         'user' => $user_id,
-        'plan' => $debit_purse+" to wallet",
+        'plan' => "{$debit_purse} to wallet",
         'amount'=>$transfer_amount,
-        'type'=>'Wallet',
+        'type'=>'Wallet transfer',
       ]); 
       
       return redirect()->back()

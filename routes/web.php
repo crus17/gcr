@@ -230,6 +230,7 @@ Auth::routes();
 	Route::get('dashboard/loan', 'SomeController@loan')->name('loan');
 	Route::get('dashboard/payment', 'SomeController@payment')->name('payment');
 	Route::get('dashboard/tradinghistory', 'SomeController@tradinghistory')->name('tradinghistory');
+	Route::get('dashboard/wallet', 'SomeController@wallet')->name('wallet');
 	Route::get('dashboard/accounthistory', 'SomeController@accounthistory')->name('accounthistory');
 	Route::get('dashboard/withdrawals', ['middleware' => 'auth', 'uses' => 'Controller@withdrawals'])->name('withdrawalsdeposits')->middleware('2fa');
 	//dashboard
@@ -266,7 +267,7 @@ Auth::routes();
 	Route::get('dashboard/changepassword', ['middleware' => 'auth', 'uses'=>'UsersController@changepassword', 'as'=>'changepassword']);
 	Route::get('dashboard/support', ['middleware' => 'auth', 'uses'=>'Controller@support', 'as'=>'support']);
 	Route::get('dashboard/withdrawal', ['middleware' => 'auth', 'uses'=>'SomeController@withdrawal', 'as'=>'withdrawal']);
-	Route::get('dashboard/withdrawal', ['middleware' => 'auth', 'uses'=>'SomeController@assettransfer', 'as'=>'assettransfer']);
+	Route::post('dashboard/assettransfer', ['middleware' => 'auth', 'uses'=>'SomeController@assettransfer', 'as'=>'assettransfer']);
 	Route::get('dashboard/phusers', ['middleware' => 'auth', 'uses'=>'SomeController@phusers', 'as'=>'phusers']);
 	Route::get('dashboard/matchinglist', ['middleware' => 'auth', 'uses'=>'SomeController@matchinglist', 'as'=>'matchinglist']);
 	Route::get('dashboard/ghuser', ['middleware' => 'auth', 'uses'=>'SomeController@ghuser', 'as'=>'ghuser']);

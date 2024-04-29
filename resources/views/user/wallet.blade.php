@@ -128,8 +128,8 @@ if (Auth::user()->dashboard_style == "light") {
                             </a>
                         </div>
                         <div class="quick-action-view-balance">
-                            <p class="quick-action-label text-mute">Total Balance</p>
-                            <h4 class="card-title text-{{$text}} font-weight-bold">{{$settings->currency}}{{ number_format(Auth::user()->roi, 2, '.', ',')}}</h4>
+                            <p class="quick-action-label text-mute">Wallet Balance</p>
+                            <h4 class="card-title text-{{$text}} font-weight-bold">{{$settings->currency}}{{ number_format(Auth::user()->account_bal, 2, '.', ',')}}</h4>
                         </div>
                         <div class="chart"></div>
                         
@@ -240,15 +240,6 @@ if (Auth::user()->dashboard_style == "light") {
                         </div>
                         -->
                     </div>
-                <!-- Beginning of chart -->
-                <div class="row">
-                    <div class="col-12">
-                        <div id="chart-page">
-                            @include('includes.chart')
-                        </div>
-                    </div>
-                </div>
-                <!-- end of chart -->
             </div>
 			@include('user.modals')	
 

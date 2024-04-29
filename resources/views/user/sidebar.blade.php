@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('dashboard/accounthistory') }}">
+                    <a href="{{ url('dashboard/wallet') }}">
                         <i class="fa fa-wallet " aria-hidden="true"></i>
                         <p>Wallet</p>
                     </a>

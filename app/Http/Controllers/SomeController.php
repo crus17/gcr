@@ -72,7 +72,18 @@ class SomeController extends Controller
   }
   
    //Account transactions history route
-     public function accounthistory(){
+    public function wallet(){
+      
+      return view('user.wallet')
+      ->with(array(
+        'title' => 'Wallet',
+        'settings' => settings::where('id', '=', '1')->first(),
+      ));
+
+  }
+   
+  //Account transactions history route
+  public function accounthistory(){
       
       return view('user.transactions')
       ->with(array(
@@ -555,24 +566,24 @@ public function delnotif($id){
       
       } else if($debit_purse=='Profit'){
        
-        if(Auth::user()->profit < $transfer_amount){
+        if(Auth::user()->roi < $transfer_amount){
             return redirect()->back()
         ->with('message', 'Sorry, your profit balance is insufficient for this request.'); 
         }
 
         // TODO: create a profit and account_bal column
-        users::where('id',$user->id)->update(['profit' => $user->profit - $transfer_amount,]);
+        users::where('id',$user->id)->update(['roi' => $user->roi - $transfer_amount,]);
         users::where('id',$user->id)->update(['account_bal' => $user->account_bal + $transfer_amount,]);
       
       } else if($debit_purse=='Ref_Bonus'){
        
-        if(Auth::user()->referral_bal < $transfer_amount){
+        if(Auth::user()->ref_bonus < $transfer_amount){
             return redirect()->back()
         ->with('message', 'Sorry, your Referral bonus balance is insufficient for this request.'); 
         }
 
-        // TODO: create a referral_bal and account_bal column
-        users::where('id',$user->id)->update(['referral_bal' => $user->referral_bal - $transfer_amount,]);
+        // TODO: create a ref_bonus and account_bal column
+        users::where('id',$user->id)->update(['ref_bonus' => $user->ref_bonus - $transfer_amount,]);
         users::where('id',$user->id)->update(['account_bal' => $user->account_bal + $transfer_amount,]);
       
       }

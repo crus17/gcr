@@ -344,7 +344,7 @@ class LogicController extends Controller
             $agent=users::where('id',$user->ref_by)->first();
             users::where('id',$user->ref_by)
             ->update([
-            'referral_bal' => $agent->referral_bal + $earnings,
+            'ref_bonus' => $agent->ref_bonus + $earnings,
             ]);
             
             //create history

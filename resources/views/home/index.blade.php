@@ -1394,9 +1394,10 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                         <div class="socials">
                             <ul>
                                 <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://instagram.com/globalcryptoaitrade?igshid=MzRIODBiNWFIZA=="><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="{{$settings->instagram}}"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="{{$settings->telegram}}"><i class="fab fa-telegram"></i></a></li>
                                 <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
@@ -1420,11 +1421,19 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                             </div>
                         </a>
                             
-                        <a href="https://instagram.com/globalcryptoaitrade?igshid=MzRIODBiNWFIZA==" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
+                        <a href="{{$settings->instagram}}" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
                             <div id="instagramBtn">
                                 <div class="instag-circle"></div>
                                 <div class="instag-circle-fill"></div>
                                 <img src="{{ asset ('home/images/instagram.png')}}" width="100%">
+                            </div>
+                        </a>
+                        
+                        <a href="{{$settings->instagram}}" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
+                            <div id="telegramBtn">
+                                <div class="telegram-circle"></div>
+                                <div class="telegram-circle-fill"></div>
+                                <img src="{{ asset ('home/images/telegram.png')}}" width="100%">
                             </div>
                         </a>
                             

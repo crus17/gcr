@@ -72,7 +72,7 @@
     }
 }
 
-#capitol-callback, #instagramBtn {
+#capitol-callback, #instagramBtn, #telegramBtn {
     font-family: Arial;
     position: fixed;
     width: 72px;
@@ -87,9 +87,15 @@
     left: 150px;
 }
 
+#telegramBtn {
+    left: 250px;
+}
+
 .cpt-circle,
 .cpt-circle-fill,
 .instag-circle,
+.telegram-circle,
+.telegram-circle-fill,
 .instag-circle-fill {
     position: absolute;
     border-radius: 100%;
@@ -102,7 +108,7 @@
     animation-delay: 2s;
 }
 
-.cpt-circle, .instag-circle {
+.cpt-circle, .instag-circle, .telegram-circle {
     width: 250%;
     height: 250%;
     background-color: transparent;
@@ -117,6 +123,9 @@
 }
 .instag-circle{
     border: 2px solid #9d2d0e;
+}
+.telegram-circle{
+    border: 2px solid #0e8f9d;
 }
 
 .cpt-circle-fill, .instag-circle-fill {
@@ -133,6 +142,10 @@
 .instag-circle-fill{
     background-color: #9d400e;
     box-shadow: 0 0 2px 0 #9d400e !important;
+}
+.telegram-circle-fill{
+    background-color: #0e889d;
+    box-shadow: 0 0 2px 0 #0e889d !important;
 }
 .anchor-btn {
     width: 50px;

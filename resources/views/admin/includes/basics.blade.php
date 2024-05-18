@@ -6,24 +6,65 @@
 
         <!-- WhatsApp Number -->
         <div class="panel panel-default" style="border:0px solid #fff;">
-                        <!-- Panel Heading Starts -->
-                <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#whatsapp">
-                        WhatsApp <i class="fa fa-arrow-down"></i>  </a>
-                    </h4>
+            <!-- Panel Heading Starts -->
+            <div class="panel-heading">
+                <h4 class="panel-title text-{{$text}}">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#whatsapp">
+                    WhatsApp <i class="fa fa-arrow-down"></i>  </a>
+                </h4>
+            </div>
+                
+            <div id="whatsapp" class="panel-collapse collapse">
+                <div class="sign-u">
+                <div class="sign-up1">
+                    <h4 class="text-{{$text}}">WhatsApp Number :</h4>
                 </div>
-                    
-                <div id="whatsapp" class="panel-collapse collapse">
-                    <div class="sign-u">
-                    <div class="sign-up1">
-                        <h4 class="text-{{$text}}">WhatsApp Number :</h4>
-                    </div>
-                    <div class="sign-up2">
-                        <input type="text" name="whatsapp" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->whatsapp}}">
-                    </div>
+                <div class="sign-up2">
+                    <input type="text" name="whatsapp" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->whatsapp}}">
                 </div>
             </div>
+        </div>
+        <!-- Instagram Link -->
+        <div class="panel panel-default" style="border:0px solid #fff;">
+            <!-- Panel Heading Starts -->
+            <div class="panel-heading">
+                <h4 class="panel-title text-{{$text}}">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#instagram">
+                    Instagram <i class="fa fa-arrow-down"></i>  </a>
+                </h4>
+            </div>
+                
+            <div id="instagram" class="panel-collapse collapse">
+                <div class="sign-u">
+                <div class="sign-up1">
+                    <h4 class="text-{{$text}}">Instagram Link :</h4>
+                </div>
+                <div class="sign-up2">
+                    <input type="text" name="instagram" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->instagram}}">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Telegram Chanel -->
+        <div class="panel panel-default" style="border:0px solid #fff;">
+            <!-- Panel Heading Starts -->
+            <div class="panel-heading">
+                <h4 class="panel-title text-{{$text}}">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#telegram">
+                    Telegram <i class="fa fa-arrow-down"></i>  </a>
+                </h4>
+            </div>
+                
+            <div id="telegram" class="panel-collapse collapse">
+                <div class="sign-u">
+                <div class="sign-up1">
+                    <h4 class="text-{{$text}}">Telegram Channel :</h4>
+                </div>
+                <div class="sign-up2">
+                    <input type="text" name="telegram" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->telegram}}">
+                </div>
+            </div>
+        </div>
 
             <!-- Payment info and methods -->
             <div class="panel panel-default">

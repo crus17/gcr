@@ -357,6 +357,8 @@ public function updatemark(Request $request){
     'payment_mode'=>$request['payment_mode1'].$request['payment_mode2'],
     'bank_name'=>$request['bank_name'],
     'whatsapp'=>$request['whatsapp'],
+    'instagram'=>$request['instagram'],
+    'telegram'=>$request['telegram'],
     'account_name'=>$request['account_name'],
     'account_number'=>$request['account_number'],
     'btc_address'=>$request['btc_address'],

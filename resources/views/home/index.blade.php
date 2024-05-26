@@ -1429,7 +1429,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                             </div>
                         </a>
                         
-                        <a href="{{$settings->instagram}}" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
+                        <a href="https://t.me/{{$settings->telegram}}" id="InstagramBtnDesktop" target="_blank" class="anchor-btn" lang="en">
                             <div id="telegramBtn">
                                 <div class="telegram-circle"></div>
                                 <div class="telegram-circle-fill"></div>

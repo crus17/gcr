@@ -58,10 +58,10 @@
             <div id="telegram" class="panel-collapse collapse">
                 <div class="sign-u">
                 <div class="sign-up1">
-                    <h4 class="text-{{$text}}">Telegram Channel :</h4>
+                    <h4 class="text-{{$text}}">Telegram ID:</h4>
                 </div>
                 <div class="sign-up2">
-                    <input type="text" name="telegram" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->telegram}}">
+                    <input type="text" name="telegram" placeholder="Channel_ID" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->telegram}}">
                 </div>
             </div>
         </div>

@@ -69,14 +69,14 @@
                                 <h2>Cashback Rewards</h2>
                                 <p>As a Referrer, you will earn cashback rewards based on the deposits made by your Referees:</p>
                                 <ul>
-                                    <li><strong>Direct Referee:</strong> Earn 3% of the Direct Referee’s deposit.</li>
-                                    <li><strong>Second Layer Referee:</strong> Earn 1% of the deposit made by the Second Layer Referee (a referral made by your Direct Referee).</li>
-                                    <li><strong>Third Layer Referee:</strong> Earn 0.35% of the deposit made by the Third Layer Referee (a referral made by the Second Layer Referee).</li>
+                                    <li><strong>Direct Referee:</strong> Earn {{$settings->referral_commission}}% of the Direct Referee’s deposit.</li>
+                                    <li><strong>Second Layer Referee:</strong> Earn {{$settings->referral_commission1}}% of the deposit made by the Second Layer Referee (a referral made by your Direct Referee).</li>
+                                    <li><strong>Third Layer Referee:</strong> Earn {{$settings->referral_commission2}}% of the deposit made by the Third Layer Referee (a referral made by the Second Layer Referee).</li>
                                 </ul>
                                 <p><strong>Note:</strong> The total cashback rewards are capped at $100 per Referrer.</p>
                             
                                 <h2>Sign-Up Bonus</h2>
-                                <p>Each Referee will receive a one-time sign-up bonus of $20 upon successful registration and completion of their first trade.</p>
+                                <p>Each Referee will receive a one-time sign-up bonus of ${{$settings->signup_bonus}} upon successful registration and completion of their first trade.</p>
                             
                                 <h2>Program Restrictions</h2>
                                 <ul>

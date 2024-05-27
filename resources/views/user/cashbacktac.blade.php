@@ -66,12 +66,12 @@
                              <h2>4. Rewards</h2>
                              <p><strong>4.1 Referrer Cashback:</strong> The Referrer will receive rewards based on the deposits of the Referee and their subsequent layers of referrals:</p>
                              <ul>
-                                 <li><strong>Direct Referee:</strong> The Referrer will receive 3% of the Direct Referee’s deposit.</li>
-                                 <li><strong>Second Layer Referee:</strong> The Referrer will receive 1% of the deposit made by the Second Layer Referee (a referral made by the Direct Referee).</li>
-                                 <li><strong>Third Layer Referee:</strong> The Referrer will receive 0.35% of the deposit made by the Third Layer Referee (a referral made by the Second Layer Referee).</li>
+                                 <li><strong>Direct Referee:</strong> The Referrer will receive {{$settings->referral_commission}}% of the Direct Referee’s deposit.</li>
+                                 <li><strong>Second Layer Referee:</strong> The Referrer will receive {{$settings->referral_commission1}}% of the deposit made by the Second Layer Referee (a referral made by the Direct Referee).</li>
+                                 <li><strong>Third Layer Referee:</strong> The Referrer will receive {{$settings->referral_commission2}}% of the deposit made by the Third Layer Referee (a referral made by the Second Layer Referee).</li>
                              </ul>
                              <p><strong>4.2 Reward Cap:</strong> The total cashback rewards are capped at $100 per Referrer.</p>
-                             <p><strong>4.3 Sign-Up Bonus:</strong> Each Referee will receive a one-time sign-up bonus of $20 upon successful registration and completion of their first trade.</p>
+                             <p><strong>4.3 Sign-Up Bonus:</strong> Each Referee will receive a one-time sign-up bonus of ${{$settings->signup_bonus}} upon successful registration and completion of their first trade.</p>
                          
                              <h2>5. Program Restrictions</h2>
                              <p><strong>5.1 Self-Referral:</strong> Referrers cannot refer themselves or create multiple accounts to take advantage of the Program.</p>

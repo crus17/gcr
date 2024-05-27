@@ -408,7 +408,20 @@ class UsersController extends Controller
       'title'=>'Refer Users',
       'team' => users::where('ref_by',0)->get(),
       'settings' => settings::where('id', '=', '1')->first()));
+  }
 
+  public function cashback(){
+    $array = users::all();
+    return view('user.cashback')->with(array(
+      'title'=>'Referral Program',
+      'settings' => settings::where('id', '=', '1')->first()));
+  }
+
+  public function cashbacktac(){
+    $array = users::all();
+    return view('user.cashbacktac')->with(array(
+      'title'=>'Cashback Program Terms and Conditions',
+      'settings' => settings::where('id', '=', '1')->first()));
   }
 
 

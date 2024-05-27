@@ -275,6 +275,8 @@ Auth::routes();
 	Route::get('dashboard/tupload/{id}', ['middleware' => 'auth', 'uses'=>'UsersController@tupload', 'as'=>'tupload']);
 	Route::get('dashboard/dnpagent', ['middleware' => 'auth', 'uses'=>'UsersController@dnpagent', 'as'=>'dnpagent']);
 	Route::get('dashboard/referuser', ['middleware' => 'auth', 'uses'=>'UsersController@referuser', 'as'=>'referuser']);
+	Route::get('dashboard/cashback', ['middleware' => 'auth', 'uses'=>'UsersController@cashback', 'as'=>'cashback']);
+	Route::get('dashboard/cashbacktac', ['middleware' => 'auth', 'uses'=>'UsersController@cashbacktac', 'as'=>'cashbacktac']);
 	//Route::get('dashboard/notification', 'UsersController@notification');
 	Route::get('dashboard/notification', ['middleware' => 'auth', 'uses'=>'SomeController@notification', 'as'=>'notification']);
 	Route::get('dashboard/subtrade', ['middleware' => 'auth', 'uses' => 'Controller@subtrade'])->name('subtrade');

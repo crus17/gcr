@@ -104,8 +104,8 @@ if (Auth::user()->dashboard_style == "light") {
                             <h1 class="text-{{$text}}">Get a cashback</h1>
                             <p>Invite vour friends to use {{$settings->site_name}} and get up to $100 Cashback straight to vour wallet</p>
                             <div class="d-flex">
-                                <button class="btn btn-primary mr-2 rounded-pill">Learn more</button>
-                                <button class="btn bg-transparent text-muted">Terms & condition</button>
+                                <a href="{{ url('dashboard/cashback') }}" class="btn btn-primary mr-2 rounded-pill">Learn more</a>
+                                <a href="{{ url('dashboard/cashbacktac') }}" class="btn bg-transparent text-muted">Terms & condition</a>
                             </div>
                         </div>
                         <div class="promo-img d-none d-sm-block d-md-block">

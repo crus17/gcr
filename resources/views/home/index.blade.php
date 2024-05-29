@@ -1429,7 +1429,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                             </div>
                         </a>
                         
-                        <a href="tg//join?invite={{$settings->telegram}}" id="InstagramBtnDesktop" class="anchor-btn" lang="en">
+                        <a href="tg://join?invite={{$settings->telegram}}" id="InstagramBtnDesktop" class="anchor-btn" lang="en">
                             <div id="telegramBtn">
                                 <div class="telegram-circle"></div>
                                 <div class="telegram-circle-fill"></div>

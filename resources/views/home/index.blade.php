@@ -1397,7 +1397,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                                 <li><a href="{{$settings->instagram}}"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="{{$settings->telegram}}"><i class="fab fa-telegram"></i></a></li>
+                                <li><a href="tg://resolve?domain={{$settings->telegram}}"><i class="fab fa-telegram"></i></a></li>
                                 <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                         </div>
@@ -1429,7 +1429,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                             </div>
                         </a>
                         
-                        <a href="tg://join?invite={{$settings->telegram}}" id="InstagramBtnDesktop" class="anchor-btn" lang="en">
+                        <a href="tg://resolve?domain={{$settings->telegram}}" id="InstagramBtnDesktop" class="anchor-btn" lang="en">
                             <div id="telegramBtn">
                                 <div class="telegram-circle"></div>
                                 <div class="telegram-circle-fill"></div>
